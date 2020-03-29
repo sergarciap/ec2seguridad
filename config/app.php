@@ -1,5 +1,10 @@
 <?php
-
+  
+  $getHost      = request()->getSchemeAndHttpHost();
+  print_r($getHost);die;
+  $getAssetsUrl = strpos($getHost, "localhost") !== false 
+                  ? $getHost.'/creativerseWeb/public' 
+                  : $getHost.'/public';
 return [
 
     /*
@@ -39,7 +44,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
