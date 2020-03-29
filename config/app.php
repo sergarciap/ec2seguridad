@@ -1,10 +1,9 @@
 <?php
   
   $getHost      = request()->getSchemeAndHttpHost();
-  print_r($getHost);die;
-  $getAssetsUrl = strpos($getHost, "localhost") !== false 
+  /*$getAssetsUrl = strpos($getHost, "localhost") !== false 
                   ? $getHost.'/creativerseWeb/public' 
-                  : $getHost.'/public';
+                  : $getHost.'/public';*/
 return [
 
     /*
@@ -57,8 +56,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
-
+    #'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', $getHost),
+    
     'asset_url' => env('ASSET_URL', null),
 
     /*

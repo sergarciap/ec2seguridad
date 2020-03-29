@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+/**
+ * Regla de enrutador en la raiz de la uri, controlando el request en 
+ * la función "index" del controllador "AdministrarWebController"
+ */
+Route::any('/', 'AdministrarWebController@index');
+
+
