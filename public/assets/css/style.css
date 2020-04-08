@@ -2708,7 +2708,7 @@ input[type="checkbox"] {
   padding: 0 10px;
   font-weight: 500;
   color: #333;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .language-menu > ul > li > a span {
@@ -2760,7 +2760,7 @@ input[type="checkbox"] {
 .language-menu > ul > li ul li a {
   font-weight: 500;
   color: #333;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: block;
   text-decoration: none;
   padding: 10px;
@@ -2768,7 +2768,7 @@ input[type="checkbox"] {
   background: #fff;
   color: #222;
   line-height: 1;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .language-menu > ul > li ul li a span {

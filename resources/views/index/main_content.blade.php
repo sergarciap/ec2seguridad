@@ -5,12 +5,12 @@
             <!--baseline-->
             <div class="col-lg-6 col-md-6">
                 <div class="infotechno-hero-text  wow move-up">
-                    <h6>IT Design & Consulting </h6>
-                    <h1 class="font-weight--reguler mb-15">Facilitate All <br>  Local IT-related Service Providers  </h1>
-                        <p>Highly Tailored IT Design, Management & Support Services. </p>
-                        <div class="hero-button  mt-30">
-                            <a href="#" class="ht-btn ht-btn-md">Get details</a>
-                        </div>
+                    <h6>{{ $viewData['main_config']['infotechno-hero']['infotechno-hero-text']['h6'] }}</h6>
+                    <h2 class="mb-15" style="font-weight: 600;">{!! $viewData['main_config']['infotechno-hero']['infotechno-hero-text']['h2'] !!}</h2>
+                    <p>{{ $viewData['main_config']['infotechno-hero']['infotechno-hero-text']['p'] }}</p>
+                    <div class="hero-button  mt-30">
+                        <a href="{{ $viewData['main_config']['infotechno-hero']['infotechno-hero-text']['button']['href'] }}" class="ht-btn ht-btn-md">{{ $viewData['main_config']['infotechno-hero']['infotechno-hero-text']['button']['lbl_menu'] }}</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
