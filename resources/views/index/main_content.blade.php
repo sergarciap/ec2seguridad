@@ -28,103 +28,107 @@
 </div>
 <!--============ Infotechno Hero End ============-->
 <!--====================  brand logo slider area ====================-->
-<div class="brand-logo-slider-area section-space--ptb_60">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <!-- brand logo slider -->
-                <div class="brand-logo-slider__container-area">
-                    <div class="swiper-container brand-logo-slider__container">
-                        <div class="swiper-wrapper brand-logo-slider__one">
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-01.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-01-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-02.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-02-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-03.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-03-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-04.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-04-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-05.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-05-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-06.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-06-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-07.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-07-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-08.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-08-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide brand-logo brand-logo--slider">
-                                <a href="#">
-                                    <div class="brand-logo__image">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-09.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="brand-logo__image-hover">
-                                        <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-09-hover.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                </a>
+
+
+@if($viewData['main_config']['brand-logo-slider-area']['bo_mostrar'] == 1)
+    <div class="brand-logo-slider-area section-space--ptb_60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- brand logo slider -->
+                    <div class="brand-logo-slider__container-area">
+                        <div class="swiper-container brand-logo-slider__container">
+                            <div class="swiper-wrapper brand-logo-slider__one">
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-01.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-01-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-02.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-02-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-03.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-03-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-04.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-04-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-05.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-05-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-06.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-06-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-07.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-07-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-08.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-08-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide brand-logo brand-logo--slider">
+                                    <a href="#">
+                                        <div class="brand-logo__image">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-09.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="brand-logo__image-hover">
+                                            <img src="{{ URL::asset('assets/images/brand/mitech-client-logo-09-hover.png') }}" class="img-fluid" alt="">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,7 +136,7 @@
             </div>
         </div>
     </div>
-</div>
+@endif
 <!--====================  End of brand logo slider area  ====================-->
 <!--===========  feature-images-wrapper  Start =============-->
 <div class="feature-images-wrapper bg-gray section-space--ptb_100">
@@ -142,8 +146,8 @@
             <div class="col-lg-12">
                 <!-- section-title-wrap Start -->
                 <div class="section-title-wrap text-center">
-                    <h6 class="section-sub-title mb-20">Our services</h6>
-                    <h3 class="heading">For your very specific industry, <br> we have <span class="text-color-primary"> highly-tailored IT solutions.</span></h3>
+                    <h6 class="section-sub-title mb-20">{{ $viewData['main_config']['feature-images-wrapper']['section-sub-title'] }}</h6>
+                    <h3 class="heading">{!! $viewData['main_config']['feature-images-wrapper']['heading'] !!}</h3>
                 </div>
                 <!-- section-title-wrap Start -->
             </div>
@@ -153,84 +157,36 @@
             <div class="col-12">
                 <div class="feature-images__one">
                     <div class="row">
-
-                        <div class="col-lg-4 col-md-6 wow move-up">
-                            <!-- ht-box-icon Start -->
-                            <div class="ht-box-images style-01">
-                                <div class="image-box-wrap">
-                                    <div class="box-image">
-                                        <img class="img-fulid" src="{{ URL::asset('assets/images/icons/mitech-box-image-style-01-image-01-100x108.png') }}" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="heading">IT Design </h5>
-                                        <div class="text">We provide the most responsive and functional IT design for companies and businesses worldwide.
+                        @foreach ($viewData['main_config']['feature-images-wrapper']['feature-images__one'] as $valIo)
+                            <div class="col-lg-4 col-md-6 wow move-up">
+                                <!-- ht-box-icon Start -->
+                                <div class="ht-box-images style-01">
+                                    <div class="image-box-wrap">
+                                        <div class="box-image">
+                                            <img class="img-fulid" src="{{ URL::asset($valIo['img']) }}" alt="">
                                         </div>
-                                        <div class="circle-arrow">
-                                            <div class="middle-dot"></div>
-                                            <div class="middle-dot dot-2"></div>
-                                            <a href="#">
-                                                <i class="far fa-long-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ht-box-icon End -->
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 wow move-up">
-                            <!-- ht-box-icon Start -->
-                            <div class="ht-box-images style-01">
-                                <div class="image-box-wrap">
-                                    <div class="box-image">
-                                        <img class="img-fulid" src="{{ URL::asset('assets/images/icons/mitech-box-image-style-01-image-02-100x108.png') }}" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="heading">IT Management</h5>
-                                        <div class="text">It’s possible to simultaneously manage and transform information from one server to another.
-                                        </div>
-                                        <div class="circle-arrow">
-                                            <div class="middle-dot"></div>
-                                            <div class="middle-dot dot-2"></div>
-                                            <a href="#">
-                                                <i class="far fa-long-arrow-right"></i>
-                                            </a>
+                                        <div class="content">
+                                            <h5 class="heading">{{ $valIo['heading'] }}</h5>
+                                            <div class="text">{{ $valIo['text'] }}</div>
+                                            <div class="circle-arrow">
+                                                <div class="middle-dot"></div>
+                                                <div class="middle-dot dot-2"></div>
+                                                <a href="{{ $valIo['href'] }}">
+                                                    <i class="far fa-long-arrow-right"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- ht-box-icon End -->
                             </div>
-                            <!-- ht-box-icon End -->
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 wow move-up">
-                            <!-- ht-box-icon Start -->
-                            <div class="ht-box-images style-01">
-                                <div class="image-box-wrap">
-                                    <div class="box-image">
-                                        <img class="img-fulid" src="{{ URL::asset('assets/images/icons/mitech-box-image-style-01-image-03-100x108.png') }}" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="heading">Data Security</h5>
-                                        <div class="text">Back up your database, store in a safe and secure place while still maintaining its accessibility.
-                                        </div>
-                                        <div class="circle-arrow">
-                                            <div class="middle-dot"></div>
-                                            <div class="middle-dot dot-2"></div>
-                                            <a href="#">
-                                                <i class="far fa-long-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ht-box-icon End -->
-                        </div>
-
+                        @endforeach
                     </div>
                 </div>
-
-                <div class="section-under-heading text-center section-space--mt_60 section-space--pt_30">Challenges are just opportunities in disguise. <a href="#">Take the challenge!</a></div>
-
+                <div class="section-under-heading text-center section-space--mt_60 section-space--pt_30">
+                    {{ $viewData['main_config']['feature-images-wrapper']['section-under-heading']['text_p'] }}&nbsp;
+                    <a href="{{ $viewData['main_config']['feature-images-wrapper']['section-under-heading']['href'] }}">{{ $viewData['main_config']['feature-images-wrapper']['section-under-heading']['text_s'] }}</a>
+                </div>
             </div>
         </div>
     </div>
@@ -415,40 +371,42 @@
 </div>
 <!-- ============ Our Experience Wrapper End =============== -->
 <!--=========== fun fact Wrapper Start ==========-->
-<div class="fun-fact-wrapper">
-    <div class="container">
-        <div class="fun-fact-grid-4">
-            <div class="grid-item  wow move-up">
-                <div class="fun-fact--one text-center">
-                    <h5 class="fun-fact__title">Successfully work <br> with </h5>
-                        <div class="fun-fact__count counter">1056</div>
-                        <span class="fun-fact__text">HAPPY CLIENTS</span>
+@if($viewData['main_config']['fun-fact-wrapper']['bo_mostrar'] == 1)
+    <div class="fun-fact-wrapper">
+        <div class="container">
+            <div class="fun-fact-grid-4">
+                <div class="grid-item  wow move-up">
+                    <div class="fun-fact--one text-center">
+                        <h5 class="fun-fact__title">Successfully work <br> with </h5>
+                            <div class="fun-fact__count counter">1056</div>
+                            <span class="fun-fact__text">HAPPY CLIENTS</span>
+                    </div>
                 </div>
-            </div>
-            <div class="grid-item  wow move-up">
-                <div class="fun-fact--one text-center">
-                    <h5 class="fun-fact__title">Successfully <br> completed</h5>
-                        <div class="fun-fact__count counter">491</div>
-                        <span class="fun-fact__text">Finished projects</span>
+                <div class="grid-item  wow move-up">
+                    <div class="fun-fact--one text-center">
+                        <h5 class="fun-fact__title">Successfully <br> completed</h5>
+                            <div class="fun-fact__count counter">491</div>
+                            <span class="fun-fact__text">Finished projects</span>
+                    </div>
                 </div>
-            </div>
-            <div class="grid-item  wow move-up">
-                <div class="fun-fact--one text-center">
-                    <h5 class="fun-fact__title">Recruit more <br> than</h5>
-                        <div class="fun-fact__count counter">245</div>
-                        <span class="fun-fact__text">SKilled Experts</span>
+                <div class="grid-item  wow move-up">
+                    <div class="fun-fact--one text-center">
+                        <h5 class="fun-fact__title">Recruit more <br> than</h5>
+                            <div class="fun-fact__count counter">245</div>
+                            <span class="fun-fact__text">SKilled Experts</span>
+                    </div>
                 </div>
-            </div>
-            <div class="grid-item  wow move-up">
-                <div class="fun-fact--one text-center">
-                    <h5 class="fun-fact__title">Blog <br> update </h5>
-                        <div class="fun-fact__count counter">1090</div>
-                        <span class="fun-fact__text">Media Posts</span>
+                <div class="grid-item  wow move-up">
+                    <div class="fun-fact--one text-center">
+                        <h5 class="fun-fact__title">Blog <br> update </h5>
+                            <div class="fun-fact__count counter">1090</div>
+                            <span class="fun-fact__text">Media Posts</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+@endif
 <!--=========== fun fact Wrapper End ==========-->
 <!--=========== Infotechno Video Wrapper Start ==========-->
 <div class="infotechno-video-wrapper infotechno-video-ptb infotechno-video-bg">
@@ -610,89 +568,91 @@
 <!--===========  Projects wrapper End =============-->
 
 <!--====================  testimonial section ====================-->
-<div class="testimonial-slider-area section-space--ptb_120 bg-gray-3">
-    <div class="container-fluid container-fluid--cp-80">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title-wrap text-center section-space--mb_60">
-                    <h6 class="section-sub-title mb-20">Testimonials</h6>
-                    <h3 class="heading">Why do people praise about<span class="text-color-primary"> Mitech?</span></h3>
-                </div>
-                <div class="testimonial-slider">
-                    <div class="swiper-container testimonial-slider__container-two">
-                        <div class="swiper-wrapper testimonial-slider__wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-slider__single wow move-up">
-                                    <h6 class="testimonial-subject">The Mitech team works really hard to ensure high level of quality</h6>
-                                    <div class="testimonial-slider__text">There are thousands of IT service companies in the US. But there’s nothing like @Mitech. Their popularity and reputation are just evident. </div>
-                                    <div class="author-info">
-                                        <div class="testimonial-slider__media">
-                                            <img src="{{ URL::asset('assets/images/testimonial/mitech-testimonial-avata-04-70x70.jpg') }}" class="img-fluid" alt="">
+@if($viewData['main_config']['testimonial-slider-area']['bo_mostrar'] == 1)
+    <div class="testimonial-slider-area section-space--ptb_120 bg-gray-3">
+        <div class="container-fluid container-fluid--cp-80">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-wrap text-center section-space--mb_60">
+                        <h6 class="section-sub-title mb-20">Testimonials</h6>
+                        <h3 class="heading">Why do people praise about<span class="text-color-primary"> Mitech?</span></h3>
+                    </div>
+                    <div class="testimonial-slider">
+                        <div class="swiper-container testimonial-slider__container-two">
+                            <div class="swiper-wrapper testimonial-slider__wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slider__single wow move-up">
+                                        <h6 class="testimonial-subject">The Mitech team works really hard to ensure high level of quality</h6>
+                                        <div class="testimonial-slider__text">There are thousands of IT service companies in the US. But there’s nothing like @Mitech. Their popularity and reputation are just evident. </div>
+                                        <div class="author-info">
+                                            <div class="testimonial-slider__media">
+                                                <img src="{{ URL::asset('assets/images/testimonial/mitech-testimonial-avata-04-70x70.jpg') }}" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="testimonial-slider__author">
+                                                <h6 class="name">Maggie Strickland</h6>
+                                                <span class="designation">WEB DESIGNER</span>
+                                            </div>
                                         </div>
-                                        <div class="testimonial-slider__author">
-                                            <h6 class="name">Maggie Strickland</h6>
-                                            <span class="designation">WEB DESIGNER</span>
-                                        </div>
-                                    </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-slider__single wow move-up">
-                                    <h6 class="testimonial-subject">The Mitech team works really hard to ensure high level of quality</h6>
-                                    <div class="testimonial-slider__text">I discovered @Mitech services by chance on the Internet to find a suitable IT services provider. This must be fate, not an accident at all.</div>
-                                    <div class="author-info">
-                                        <div class="testimonial-slider__media">
-                                            <img src="{{ URL::asset('assets/images/testimonial/mitech-testimonial-avata-02-70x70.jpg') }}" class="img-fluid" alt="">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slider__single wow move-up">
+                                        <h6 class="testimonial-subject">The Mitech team works really hard to ensure high level of quality</h6>
+                                        <div class="testimonial-slider__text">I discovered @Mitech services by chance on the Internet to find a suitable IT services provider. This must be fate, not an accident at all.</div>
+                                        <div class="author-info">
+                                            <div class="testimonial-slider__media">
+                                                <img src="{{ URL::asset('assets/images/testimonial/mitech-testimonial-avata-02-70x70.jpg') }}" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="testimonial-slider__author">
+                                                <h6 class="name">Robert Amplilian</h6>
+                                                <span class="designation">Marketing</span>
+                                            </div>
                                         </div>
-                                        <div class="testimonial-slider__author">
-                                            <h6 class="name">Robert Amplilian</h6>
-                                            <span class="designation">Marketing</span>
-                                        </div>
-                                    </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-slider__single wow move-up">
-                                    <h6 class="testimonial-subject">The Mitech team works really hard to ensure high level of quality</h6>
-                                    <div class="testimonial-slider__text">IT service is not an easy path to follow. But these guys can make it to the top with premium services and dedicated customer support.</div>
-                                    <div class="author-info">
-                                        <div class="testimonial-slider__media">
-                                            <img src="{{ URL::asset('assets/images/testimonial/mitech-testimonial-avata-01-70x70.jpg') }}" class="img-fluid" alt="">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slider__single wow move-up">
+                                        <h6 class="testimonial-subject">The Mitech team works really hard to ensure high level of quality</h6>
+                                        <div class="testimonial-slider__text">IT service is not an easy path to follow. But these guys can make it to the top with premium services and dedicated customer support.</div>
+                                        <div class="author-info">
+                                            <div class="testimonial-slider__media">
+                                                <img src="{{ URL::asset('assets/images/testimonial/mitech-testimonial-avata-01-70x70.jpg') }}" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="testimonial-slider__author">
+                                                <h6 class="name">Stephen Mearsley</h6>
+                                                <span class="designation">PR Officer</span>
+                                            </div>
                                         </div>
-                                        <div class="testimonial-slider__author">
-                                            <h6 class="name">Stephen Mearsley</h6>
-                                            <span class="designation">PR Officer</span>
-                                        </div>
-                                    </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-slider__single wow move-up">
-                                    <h6 class="testimonial-subject">The Mitech team works really hard to ensure high level of quality</h6>
-                                    <div class="testimonial-slider__text">There are thousands of IT service companies in the US. But there’s nothing like @Mitech. Their popularity and reputation are just evident. </div>
-                                    <div class="author-info">
-                                        <div class="testimonial-slider__media">
-                                            <img src="{{ URL::asset('assets/images/testimonial/mitech-testimonial-avata-03-70x70.jpg') }}" class="img-fluid" alt="">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slider__single wow move-up">
+                                        <h6 class="testimonial-subject">The Mitech team works really hard to ensure high level of quality</h6>
+                                        <div class="testimonial-slider__text">There are thousands of IT service companies in the US. But there’s nothing like @Mitech. Their popularity and reputation are just evident. </div>
+                                        <div class="author-info">
+                                            <div class="testimonial-slider__media">
+                                                <img src="{{ URL::asset('assets/images/testimonial/mitech-testimonial-avata-03-70x70.jpg') }}" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="testimonial-slider__author">
+                                                <h6 class="name">Monica Blews</h6>
+                                                <span class="designation">PR Officer</span>
+                                            </div>
                                         </div>
-                                        <div class="testimonial-slider__author">
-                                            <h6 class="name">Monica Blews</h6>
-                                            <span class="designation">PR Officer</span>
-                                        </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination swiper-pagination-t0 section-space--mt_40"></div>
                     </div>
-                    <div class="swiper-pagination swiper-pagination-t0 section-space--mt_40"></div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+@endif
 <!--====================  End of testimonial section  ====================-->
 
 
