@@ -147,7 +147,62 @@ array(
     ),
     #Nuestra Compañia
     'our-experience-wrapper' => array(
-
+        'section-title' => array(
+            'section-sub-title' => 'Nuestra Compañia',
+            'heading'           => 'We’ve been thriving in <span class="text-color-primary">38 years</span>',
+            'text'              => 'Nos especializamos en servicios tecnológicos y relacionados con TI, tales como ingeniería de productos, gestión de garantías, construcción de nube, infraestructura, red, etc. Ponemos un fuerte énfasis en las necesidades de su negocio para encontrar las soluciones que mejor se adapten a su demanda.',
+            'sider-title-button-box' => array(
+                'lbl_button' => 'Únete a nosotros',
+                'href'       => '#'
+            )
+        ),
+        'ht-list' => array(
+            array(
+                'href'   => '#',
+                'marker' => '01',
+                'title'  => '¿Cómo ayudamos a tu negocio?'
+            ),
+            array(
+                'href'   => '#',
+                'marker' => '02',
+                'title'  => '¿Porque deberias elegirnos?'
+            ),
+            array(
+                'href'   => '#',
+                'marker' => '03',
+                'title'  => '¿En que nos destacamos?'
+            ),
+        ),
+    ),
+    'feature-large-images-wrapper' => array(
+        'section-title-wrap' => array(
+            'section-sub-title'     => 'Contratanos, por qué no?',
+            'heading'               => '¿Cómo pretendemos <span class="text-color-primary"> sobresalir?</span>',
+        ),
+        'box-large-image__wrap' => array(
+            array(
+                'href'                     => '#',
+                'img'                      => 'assets/images/box-image/blog-01-330x330.jpg',
+                'heading'                  => 'Sistemas de gestión de creativerse',
+                'box-large-image__content' => 'Nuestros expertos técnicos tienen talento para desarrollar <strong> software de gran calidad </strong> en función de las necesidades de los clientes, avances y tendencias tecnológicas.',
+            ),
+            array(
+                'href'                     => '#',
+                'img'                      => 'assets/images/box-image/mitech-home-infotechno-box-large-image-02-330x330.jpg',
+                'heading'                  => 'Seguridad eficiente en los datos',
+                'box-large-image__content' => 'Nuestros expertos técnicos tienen talento para desarrollar <strong> software de gran calidad </strong> en función de las necesidades de los clientes, avances y tendencias tecnológicas.',
+            ),
+            array(
+                'href'                     => '#',
+                'img'                      => 'assets/images/box-image/mitech-home-infotechno-box-large-image-03-330x330.jpg',
+                'heading'                  => 'Tecnología multifunción confiable',
+                'box-large-image__content' => 'Nuestros expertos técnicos tienen talento para desarrollar <strong> software de gran calidad </strong> en función de las necesidades de los clientes, avances y tendencias tecnológicas.',
+            ),
+        ),
+        'section-under-heading' => array(
+            'href' => '#',
+            'lbl'  => 'Aprenda más sobre cómo trabajamos'
+        )
     ),
     #Estadisticas
     'fun-fact-wrapper' => array(
@@ -159,7 +214,38 @@ array(
     ),
     #Proyectos
     'projects-wrapper' => array(
-
+        'section-title-wrap' => array(
+            'section-sub-title' => 'Soluciones TI/Proyectos',
+            'heading'           => 'Nuestros Proyectos que<span class="text-color-primary">&nbsp;destacamos</span>'
+        ),
+        'projects-wrap'         => array(
+            array(
+                'href'            => 'https://creativerse.school.app',
+                'img'             => 'assets/images/projects/case-study-01-480x298.jpg',
+                'heading'         => 'Creativerse School',
+                'post-categories' => 'Cyber Security',
+                'text'            => 'At Mitech, we have a holistic and integrated approach towards core modernization to experience technological evolution.',
+            ),
+            array(
+                'href'            => '#',
+                'img'             => 'assets/images/projects/case-study-02-480x298.jpg',
+                'heading'         => 'Creativerse Risk',
+                'post-categories' => 'Cyber Security',
+                'text'            => 'The prospects for a company operating in this new market are varied and exciting. The potential…',
+            ),
+            array(
+                'href'            => '#',
+                'img'             => 'assets/images/projects/case-study-03-480x298.jpg',
+                'heading'         => 'Creativerse Iposs',
+                'post-categories' => 'Cyber Security',
+                'text'            => 'The prospects for a company operating in this new market are varied and exciting. The potential…',
+            ),
+        ),
+        'section-under-heading' => array(
+            'text_p' => 'Los desafíos son solo oportunidades disfrazadas.',
+            'text_s' => '¡Acepta el desafío!',
+            'href'   => '#'
+        )
     ),
     #Testimonios
     'testimonial-slider-area' => array(
