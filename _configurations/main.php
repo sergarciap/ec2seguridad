@@ -238,7 +238,7 @@ array(
                 'img'             => 'assets/images/projects/case-study-03-480x298.jpg',
                 'heading'         => 'Creativerse Iposs',
                 'post-categories' => 'Software/Aplicación de Gestión',
-                'text'            => 'Realiza tus ventas, manejo de inventario, reportes, facturación electronica a través de nuestra plataforma de punto de venta.',
+                'text'            => 'Realiza tus ventas, manejo de inventario, reportes y facturación electronica a través de nuestra plataforma de punto de venta.',
             ),
         ),
         'section-under-heading' => array(
