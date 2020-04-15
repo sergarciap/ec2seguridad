@@ -216,29 +216,29 @@ array(
     'projects-wrapper' => array(
         'section-title-wrap' => array(
             'section-sub-title' => 'Soluciones TI/Proyectos',
-            'heading'           => 'Nuestros Proyectos que<span class="text-color-primary">&nbsp;destacamos</span>'
+            'heading'           => 'Nuestros proyectos que<span class="text-color-primary">&nbsp;destacamos</span>'
         ),
         'projects-wrap'         => array(
             array(
                 'href'            => 'https://creativerse.school.app',
                 'img'             => 'assets/images/projects/case-study-01-480x298.jpg',
                 'heading'         => 'Creativerse School',
-                'post-categories' => 'Cyber Security',
-                'text'            => 'At Mitech, we have a holistic and integrated approach towards core modernization to experience technological evolution.',
+                'post-categories' => 'Software/Aplicación de Gestión',
+                'text'            => 'ERP orientado a instituciones educacionales con el objetivo de mejorar la gestión y optimizar los procesos organizacionales.',
             ),
             array(
-                'href'            => '#',
+                'href'            => 'javascript:void(0)',
                 'img'             => 'assets/images/projects/case-study-02-480x298.jpg',
                 'heading'         => 'Creativerse Risk',
-                'post-categories' => 'Cyber Security',
-                'text'            => 'The prospects for a company operating in this new market are varied and exciting. The potential…',
+                'post-categories' => 'Software/Aplicación de Gestión',
+                'text'            => 'Optimiza el proceso de inspección, análisis y ajustes a través de nuestra plataforma para la industria de seguros.',
             ),
             array(
-                'href'            => '#',
+                'href'            => 'javascript:void(0)',
                 'img'             => 'assets/images/projects/case-study-03-480x298.jpg',
                 'heading'         => 'Creativerse Iposs',
-                'post-categories' => 'Cyber Security',
-                'text'            => 'The prospects for a company operating in this new market are varied and exciting. The potential…',
+                'post-categories' => 'Software/Aplicación de Gestión',
+                'text'            => 'Realiza tus ventas, manejo de inventario, reportes, facturación electronica a través de nuestra plataforma de punto de venta.',
             ),
         ),
         'section-under-heading' => array(
