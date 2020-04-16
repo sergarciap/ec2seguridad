@@ -7,13 +7,13 @@
 * @param       no aplica
 * @return      array
 */
-return $main_config = 
+return $main_config =
 array(
     #Head, metadatos, etc.
     'head' => array(
         'title'       => 'Creativerse - Soluciones tecnológicas de TI',
         'short-title' => 'Creativerse Ltda.',
-        'icon'        => '' 
+        'icon'        => ''
     ),
     #Mensaje inicial de la cabecera
     'header-top-wrap' => array(
@@ -253,7 +253,79 @@ array(
     ),
     #Acerca de, noticias, tendencias, tecnologias, etc.
     'blog-section-wrapper' => array(
+        'test' => 'x',
+        'move-up-1' => array(
+            'section-sub-title'    => 'Blog y noticias',
+            'heading'              => 'Articulos interesantes<span class="text-color-primary"> actualizados</span>',
+            'infotechno-blog-list' => array(
+                array(
+                    'href'         => 'javascript:void(0)',
+                    'lbl'          => 'Ideas para altos rendimientos de inversión'
+                ),
+                array(
+                    'href'         => 'javascript:void(0)',
+                    'lbl'          => 'Cómo la tecnología hizo a las empresas más eficientes'
+                ),
+                array(
+                    'href'         => 'javascript:void(0)',
+                    'lbl'          => 'Datos seguros en la transición a una nueva oficina'
+                ),
+                array(
+                    'href'         => 'javascript:void(0)',
+                    'lbl'          => 'Las claves para persuadir a los clientes hoy en día.'
+                ),
+                array(
+                    'href'         => 'javascript:void(0)',
+                    'lbl'          => '¿Efectos de la tecnología Blockchain en el sector logístico?'
+                )
+            )
+        ),
+        'move-up-2' => array(
+            'notica_1' => array(
+                // 'img'               => 'assets/images/blog/blog-03-370x230.jpg',
+                'img'               => 'blog-03-370x230.jpg',
+                'post-date'         => '<span class="far fa-calendar meta-icon"></span>15 Abril, 2020',
+                'post-title'        => array(
+                    'href'          =>  'javascript:void(0)',
+                    'lbl'           =>  'La tecnología de 5 maneras ha mejorado el negocio hoy'
+                ),
+                'text'              => 'Desempeñan un papel en hacer que las operaciones sean más fluidas, cerrando la brecha entre las autoridades, los consumidores y las empresas...',
+                'btn'               => array(
+                    'href'          => 'javascript:void(0)',
+                    'text'          =>  'Read more <i class="ml-1 button-icon far fa-long-arrow-right"></i>'
+                )
 
+
+            ),
+            'notica_2' => array(
+                // 'img'               => 'assets/images/blog/blog-02-370x230.jpg',
+                'img'               => 'blog-02-370x230.jpg',
+                'post-date'         => '<span class="far fa-calendar meta-icon"></span>15 Abril, 2020',
+                'post-title'        => array(
+                    'href'          =>  'javascript:void(0)',
+                    'lbl'           =>  'Cómo la tecnología inalámbrica está cambiando los negocios'
+                ),
+                'text'              => '
+                Es mucho más inteligente hacer sus propias instalaciones y garantizar que todos los datos que fluyen a través de la organización tengan un cifrado de extremo a extremo...',
+                'btn'               => array(
+                    'href'          => 'javascript:void(0)'
+
+
+
+
+
+                )
+
+            ),
+
+
+
+
+
+
+
+
+        ),
     ),
     #Contacto
     'contact-us-section-wrappaer' => array(
