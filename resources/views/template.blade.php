@@ -214,7 +214,7 @@
                                 <li>58 Howard Street #2 San Francisco, CA 941</li>
                                 <li><a href="mailto:contact@aeroland.com" class="hover-style-link">contact@aeroland.com</a></li>
                                 <li><a href="tel:123344556" class="hover-style-link text-black font-weight--bold">(+68)1221 09876</a></li>
-                                <li><a href="https://hasthemes.com/" class="hover-style-link text-color-primary">www.mitech.xperts.com</a></li>
+                                <li><a href="http://www.creativerse.cl/" class="hover-style-link text-color-primary">www.creativerse.cl</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
