@@ -7,13 +7,13 @@
 * @param       no aplica
 * @return      array
 */
-return $main_config = 
+return $main_config =
 array(
     #Head, metadatos, etc.
     'head' => array(
         'title'       => 'Creativerse - Soluciones tecnológicas de TI',
         'short-title' => 'Creativerse Ltda.',
-        'icon'        => '' 
+        'icon'        => ''
     ),
     #Mensaje inicial de la cabecera
     'header-top-bar-info' => array(

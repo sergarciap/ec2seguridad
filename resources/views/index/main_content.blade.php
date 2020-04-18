@@ -377,7 +377,7 @@
                                 @php
                                     $button_text = strpos($valPw['href'], 'http') !== false ? 'Más Detalles' : 'Próximamente';
                                     $icon        = strpos($valPw['href'], 'http') !== false ? 'fa fa-long-arrow-right' : 'fas fa-spinner';
-                                    $target      = strpos($valPw['href'], 'http') !== false ? '_blank' : ''; 
+                                    $target      = strpos($valPw['href'], 'http') !== false ? '_blank' : '';
                                 @endphp
                             <div class="swiper-slide">
                                 <!-- Projects Wrap Start -->
@@ -502,99 +502,64 @@
 <div class="blog-section-wrapper section-space--pt_100  section-space--pb_70">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-4 col-md-12 wow move-up">
                 <div class="section-title tablet-mb__60 section-space--mb_30 tablet-mt__0 small-mt__0 small-mb__60 mt-30">
-                    <h6 class="section-sub-title mb-20">Blogs & news</h6>
-                    <h3 class="heading">Interesting articles<span class="text-color-primary"> updated daily</span></h3>
+                    <h6 class="section-sub-title mb-20">{{ $viewData['main_config']['blog-section-wrapper']['move-up-1']['section-sub-title'] }}</h6>
+                    <h3 class="heading">{!! $viewData['main_config']['blog-section-wrapper']['move-up-1']['heading'] !!}</h3>
                     <ul class="infotechno-blog-list mt-30">
-                        <li>
-                            <a href="#">Ideas for High Returns on Investment</a>
-                        </li>
-                        <li>
-                            <a href="#">How Technology Made Businesses More Efficient</a>
-                        </li>
-                        <li>
-                            <a href="#">Data Secure on Transitioning to a New Office</a>
-                        </li>
-                        <li>
-                            <a href="#">The Keys to Persuading Customers Nowadays</a>
-                        </li>
-                        <li>
-                            <a href="#">Blockchain Technology Effects on Logistics Sector?</a>
-                        </li>
+                        @foreach($viewData['main_config']['blog-section-wrapper']['move-up-1']['infotechno-blog-list'] as $valInfoBlogList)
+                            <li>
+                                <a href="{{ $valInfoBlogList['href'] }}">{{ $valInfoBlogList['lbl'] }}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
 
+            @foreach($viewData['main_config']['blog-section-wrapper']['move-up-2'] as $valInfoBlogList)
             <div class="col-lg-4 col-md-6 wow move-up">
                 <!--======= Single Blog Item Start ========-->
                 <div class="single-blog-item blog-grid">
                     <!-- Post Feature Start -->
                     <div class="post-feature blog-thumbnail">
                         <a href="blog-post-layout-one.html">
-                            <img class="img-fluid" src="{{ URL::asset('assets/images/blog/blog-03-370x230.jpg') }}" alt="Blog Images">
+                            <img class="img-fluid" src="{{ URL::asset(  'assets/images/blog/'.$valInfoBlogList['img']  ) }}" alt="Blog Images">
                         </a>
                     </div>
                     <!-- Post Feature End -->
-
                     <!-- Post info Start -->
                     <div class="post-info lg-blog-post-info">
                         <div class="post-meta">
                             <div class="post-date">
-                                <span class="far fa-calendar meta-icon"></span>
-                                February 28, 2019
+                                {!! $valInfoBlogList['post-date'] !!}
                             </div>
                         </div>
                         <h5 class="post-title font-weight--bold">
-                            <a href="#">5 Ways Technology Has Improved Business Today</a>
+                            <a href="{{ $valInfoBlogList['post-title']['href'] }}">{{ $valInfoBlogList['post-title']['lbl'] }}</a>
                         </h5>
                         <div class="post-excerpt mt-15">
-                            <p>They play a role in making operations more seamless, bridging the gap between authorities, consumers and businesses. …</p>
+                            <p>{{ $valInfoBlogList['text'] }}</p>
                         </div>
                         <div class="btn-text">
-                            <a href="#">Read more <i class="ml-1 button-icon far fa-long-arrow-right"></i></a>
+                            <a href="{{ $valInfoBlogList['btn']['href'] }}"> Leer más <i class="ml-1 button-icon far fa-long-arrow-right" ></i> </a>
+
                         </div>
                     </div>
                     <!-- Post info End -->
                 </div>
                 <!--===== Single Blog Item End =========-->
             </div>
+            @endforeach
 
-            <div class="col-lg-4 col-md-6 wow move-up">
-                <!--======= Single Blog Item Start ========-->
-                <div class="single-blog-item blog-grid">
-                    <!-- Post Feature Start -->
-                    <div class="post-feature blog-thumbnail">
-                        <a href="blog-post-layout-one.html">
-                            <img class="img-fluid" src="{{ URL::asset('assets/images/blog/blog-02-370x230.jpg') }}" alt="Blog Images">
-                        </a>
-                    </div>
-                    <!-- Post Feature End -->
 
-                    <!-- Post info Start -->
-                    <div class="post-info lg-blog-post-info">
-                        <div class="post-meta">
-                            <div class="post-date">
-                                <span class="far fa-calendar meta-icon"></span>
-                                February 28, 2019
-                            </div>
-                        </div>
 
-                        <h5 class="post-title font-weight--bold">
-                            <a href="#">How Wireless Technology is Changing Business</a>
-                        </h5>
 
-                        <div class="post-excerpt mt-15">
-                            <p>It is far wiser to do your own installations and ensure that all data flowing through the organization has end-to-end encryption. …</p>
-                        </div>
-                        <div class="btn-text">
-                            <a href="#">Read more <i class="ml-1 button-icon far fa-long-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Post info End -->
-                </div>
-                <!--===== Single Blog Item End =========-->
-            </div>
+
+
+
+
+
         </div>
     </div>
 </div>
