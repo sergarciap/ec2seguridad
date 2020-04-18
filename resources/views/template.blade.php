@@ -176,7 +176,7 @@
                         <div class="service-hero-wrap wow move-up">
                             <div class="service-hero-text text-center">
                                 <h3 class="text-white">{{ $viewData['main_config']['service-hero-wrapper']['h3'] }}</h3>
-                                <h1 class="font-weight--reguler text-white mb-30" style="font-weight: 800;font-size: 95px;">{{ $viewData['main_config']['service-hero-wrapper']['h1'] }}</h1>
+                                <h1 class="font-weight--reguler text-white mb-30">{{ $viewData['main_config']['service-hero-wrapper']['h1'] }}</h1>
                                 <p class="text-white">{{ $viewData['main_config']['service-hero-wrapper']['p'] }}</p>
 
                                 <div class="hero-button-group section-space--mt_50">
@@ -591,7 +591,7 @@
     -->
 
         <!-- Main JS -->
-        <script src="assets/js/main.js"></script>
+        <script src="{{ URL::asset('assets/js/main.js') }}"></script>
 
 
 </body>
