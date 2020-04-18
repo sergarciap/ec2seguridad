@@ -16,251 +16,255 @@ array(
         'icon'        => '' 
     ),
     #Mensaje inicial de la cabecera
-    'header-top-wrap' => array(
-        'top-message' => '¡Hey!, ¿estás buscando integrar tecnologias de la información para optimizar tu negocio?. <a href="#">No dudes en contactarnos.</a>'
+    'header-top-bar-info' => array(
+        'top-bar-left'  => '¡Hey!, ¿estás buscando integrar tecnologías para optimizar tu negocio?',
+        'top-bar-right' => array(
+            array(
+                'href'      => 'tel:+56956937966',
+                'icon'      => 'info-icon fa fa-phone',
+                'info-text' => '<strong>+569 56937966</strong>'
+            ),
+            array(
+                'icon'      => 'info-icon fa fa-comment-alt-lines',
+                'info-text' => 'creativerse.ltda@gmail.com'
+            )
+        )
     ),
     #logo empresa, navegación, otros links, buscar.
     'header-bottom-wrap'   => array(
-        'header__logo'     => 'assets/images/logo/logo-dark.png',
-        'header-midle-box' => array(
+        'header__logo'     => array(
+            'light-logo'       => '',//assets/images/logo/light-logo.png
+            'dark-logo'        => ''//assets/images/logo/logo-dark.png
+        ),
+        'header__navigation'=> array(
             array(
+                'href'     => 'javascript:void(0)',
                 'lbl_menu' => 'Inicio',
-                'href'     => '#',
-                'sub_menu' => array(),
+                'sub_menu' => array()
             ),
             array(
                 'lbl_menu' => 'Servicios',
-                'href'     => '#',
+                'href'     => 'javascript:void(0)',
                 'sub_menu' => array(
                     array(
+                        'href'         => 'javascript:void(0)',
                         'lbl_sub_menu' => 'Servicio 1',
-                        'href'         => '#',
                         'sub_menu'     => array()
                     ),
                     array(
+                        'href'         => 'javascript:void(0)',
                         'lbl_sub_menu' => 'Servicio 2',
-                        'href'         => '#',
                         'sub_menu'     => array()
-                    ),
-                ),
+                    )
+                )
             ),
             array(
+                'href'     => 'javascript:void(0)',
                 'lbl_menu' => 'Nuestra Compañia',
-                'href'     => '#',
-                'sub_menu' => array(),
+                'sub_menu' => array()
             ),
             array(
                 'lbl_menu' => 'Soluciones TI/Proyectos',
-                'href'     => '#',
+                'href'     => 'javascript:void(0)',
                 'sub_menu' => array(
                     array(
                         'lbl_sub_menu' => 'Creativerse School',
-                        'href'         => '#',
+                        'href'         => 'javascript:void(0)',
                         'sub_menu'     => array()
                     ),
                     array(
                         'lbl_sub_menu' => 'Creativerse Risk',
-                        'href'         => '#',
+                        'href'         => 'javascript:void(0)',
                         'sub_menu'     => array()
                     ),
                     array(
                         'lbl_sub_menu' => 'Creativerse iPoss',
-                        'href'         => '#',
+                        'href'         => 'javascript:void(0)',
                         'sub_menu'     => array()
-                    ),
-                ),
+                    )
+                )
             ),
             array(
+                'href'     => 'javascript:void(0)',
                 'lbl_menu' => 'Contáctanos',
-                'href'     => '#',
-                'sub_menu' => array(),
-            ),
-        ),
-        'header-right-box'   => array(
-            'language-menu'  => array(
-                'bo_mostrar' => 1,
-                'lbl_menu'   => 'Acerca de',
-                'href'       => '#',
-                'ls-sub-menu'=> array(
-                    array(
-                        'lbl_sub_menu' => 'Transformación Digital',
-                        'href'         => '#',
-                    ),
-                    array(
-                        'lbl_sub_menu' => 'Servicios Cloud (AWS)',
-                        'href'         => 'https://aws.amazon.com/es/what-is-aws/',
-                    ),
-                ),
-            ),
-            'header-search-form' => array(
-                'bo_mostrar'     => 1,
-            ),
+                'sub_menu' => array()
+            )
         )
     ),
     #Banner imagen, textos principales.
-    'infotechno-hero' => array(
-        //imagenes
-        'infotechno-hero-text'      =>array(
-            'h6' => 'Diseño de TI & Consultoría',
-            'h2' => 'Adáptate a los <br> Avances y Tendencias Tecnológicas',
-            'p'  => 'Diseño, administración & servicios de soporte de TI altamente personalizados.',
-            'button'  => array(
-                'lbl_menu' => 'Más Detalles',
-                'href'     => '#',
+    'service-hero-wrapper' => array(
+        'h3' => 'Servicios Tecnológicos Para',
+        'h1' => 'Tu Organización',
+        'p'  => 'Diseño, administración & servicios tecnológicos altamente personalizados.',
+        'button_p'  => array(
+            'href'  => 'javascript:void(0)',
+            'lbl'   => 'Consulta gratis'
+        ),
+        'button_s'  => array(
+            'href'  => 'javascript:void(0)',
+            'lbl'   => 'Como trabajamos'
+        )
+    ),
+    #Información y segmentación empresarial(pymes,etc.)
+    'feature-images-wrappe' => array(
+        'ht-box-images' => array(
+            array(
+                'box-image'    => array(
+                    'default-image' => 'assets/images/icons/mitech-home-resolutions-box-image-01-100x98.png',
+                    'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-01-hover-100x98.png'
+                ),
+                'content'      => array(
+                    'heading' => 'Micro Empresas',
+                    'text'    => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                    'href'    => 'javascript:void(0)'
+                )
+            ),
+            array(
+                'box-image'   => array(
+                    'default-image' => 'assets/images/icons/mitech-home-resolutions-box-image-02-100x98.png',
+                    'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-02-hover-100x98.png'
+                ),
+                'content'     => array(
+                    'heading' => 'Pymes',
+                    'text'    => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                    'href'    => 'javascript:void(0)'
+                )
+            ),
+            array(
+                'box-image'   => array(
+                    'default-image' => 'assets/images/icons/mitech-home-resolutions-box-image-03-100x98.png',
+                    'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-03-hover-100x98.png'
+                ),
+                'content'     => array(
+                    'heading' => 'Grandes Compañias',
+                    'text'    => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                    'href'    => 'javascript:void(0)'
+                )
             )
         ),
-    ),
-    #Proveedores, tecnologias, etc.
-    'brand-logo-slider-area' => array(
-        'bo_mostrar' => 0,
-        //imagenes, proveedores, etc.
+        'section-under-heading' => 'Los desafíos son solo oportunidades disfrazadas. <a href="javascript:void(0)">¡Contáctanos!</a>',
     ),
     #Servicios
-    'feature-images-wrapper' => array(
-        'section-sub-title'  => 'Nuestros Servicios',
-        'heading'            => 'Para su negocio u organización,<br> ofrecemos <span class="text-color-primary">las mejores soluciones de TI.</span>',
-        'feature-images__one'=> array(
+    'feature-icon-wrapper' => array(
+        'section-title-wrap'    => array(
+            'section-sub-title' => 'Nuestros Servicios',
+            'heading'           => 'For your very specific industry,<br> we provide <span class="text-color-primary"> truly prominent IT solutions.',
+            'heading'           => 'Para su negocio u organización,<br> Ofrecemos <span class="text-color-primary"> las mejores soluciones TI.',
+        ),
+        'feature-list__two'=> array(
             array(
-                'img'     => 'assets/images/icons/mitech-box-image-style-01-image-01-100x108.png',
-                'heading' => 'Diseño de TI',
-                'text'    => 'Ofrecemos el diseño de TI más sensible y funcional para empresas y negocios en todo el mundo.',
-                'href'    => '#'
+                'icon'       => 'assets/images/svg/linea-basic-heart.svg',
+                'heading'    => 'Diseño de TI',
+                'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                'href'       => 'javascript:void(0)'
             ),
             array(
-                'img'     => 'assets/images/icons/mitech-box-image-style-01-image-02-100x108.png',
-                'heading' => 'Gestión de TI',
-                'text'    => 'Es posible administrar y transformar simultáneamente información de un servidor a otro.',
-                'href'    => '#'
+                'icon'       => 'assets/images/svg/linea-basic-case.svg',
+                'heading'    => 'Gestión de TI',
+                'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                'href'       => 'javascript:void(0)'
             ),
             array(
-                'img'     => 'assets/images/icons/mitech-box-image-style-01-image-03-100x108.png',
-                'heading' => 'Seguridad de datos',
-                'text'    => 'Haga una copia de seguridad de su base de datos, almacénela en un lugar seguro mientras mantiene su accesibilidad.',
-                'href'    => '#'
+                'icon'       => 'assets/images/svg/linea-basic-alarm.svg',
+                'heading'    => 'Seguridad de datos',
+                'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                'href'       => 'javascript:void(0)'
+            ),
+            array(
+                'icon'       => 'assets/images/svg/linea-basic-geolocalize-05.svg',
+                'heading'    => 'Reforma empresarial',
+                'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                'href'       => 'javascript:void(0)'
+            ),
+            array(
+                'icon'       => 'assets/images/svg/linea-ecommerce-money.svg',
+                'heading'    => 'Plan de infraestructura',
+                'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                'href'       => 'javascript:void(0)'
+            ),
+            array(
+                'icon'       => 'assets/images/svg/linea-basic-spread-text-bookmark.svg',
+                'heading'    => 'Integraciones',
+                'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..',
+                'href'       => 'javascript:void(0)'
             ),
         ),
-        'section-under-heading' => array(
-            'text_p' => 'Los desafíos son solo oportunidades disfrazadas.',
-            'text_s' => '¡Acepta el desafío!',
-            'href'   => '#'
-        )
-    ),
-    #Nuestra Compañia
-    'our-experience-wrapper' => array(
-        'section-title' => array(
-            'section-sub-title' => 'Nuestra Compañia',
-            'heading'           => 'We’ve been thriving in <span class="text-color-primary">38 years</span>',
-            'text'              => 'Nos especializamos en servicios tecnológicos y relacionados con TI, tales como ingeniería de productos, gestión de garantías, construcción de nube, infraestructura, red, etc. Ponemos un fuerte énfasis en las necesidades de su negocio para encontrar las soluciones que mejor se adapten a su demanda.',
-            'sider-title-button-box' => array(
-                'lbl_button' => 'Únete a nosotros',
-                'href'       => '#'
+        'feature-list-button-box' => array(
+            'button_p'  => array(
+                'href'  => 'javascript:void(0)',
+                'lbl'   => 'Habla con un experto'
+            ),
+            'button_s'  => array(
+                'href'  => 'javascript:void(0)',
+                'lbl'   => 'Contáctanos ahora'
             )
-        ),
-        'ht-list' => array(
-            array(
-                'href'   => '#',
-                'marker' => '01',
-                'title'  => '¿Cómo ayudamos a tu negocio?'
-            ),
-            array(
-                'href'   => '#',
-                'marker' => '02',
-                'title'  => '¿Porque deberias elegirnos?'
-            ),
-            array(
-                'href'   => '#',
-                'marker' => '03',
-                'title'  => '¿En que nos destacamos?'
-            ),
-        ),
-    ),
-    'feature-large-images-wrapper' => array(
-        'section-title-wrap' => array(
-            'section-sub-title'     => 'Contratanos, por qué no?',
-            'heading'               => '¿Cómo pretendemos <span class="text-color-primary"> sobresalir?</span>',
-        ),
-        'box-large-image__wrap' => array(
-            array(
-                'href'                     => '#',
-                'img'                      => 'assets/images/box-image/blog-01-330x330.jpg',
-                'heading'                  => 'Sistemas de gestión de creativerse',
-                'box-large-image__content' => 'Nuestros expertos técnicos tienen talento para desarrollar <strong> software de gran calidad </strong> en función de las necesidades de los clientes, avances y tendencias tecnológicas.',
-            ),
-            array(
-                'href'                     => '#',
-                'img'                      => 'assets/images/box-image/mitech-home-infotechno-box-large-image-02-330x330.jpg',
-                'heading'                  => 'Seguridad eficiente en los datos',
-                'box-large-image__content' => 'Nuestros expertos técnicos tienen talento para desarrollar <strong> software de gran calidad </strong> en función de las necesidades de los clientes, avances y tendencias tecnológicas.',
-            ),
-            array(
-                'href'                     => '#',
-                'img'                      => 'assets/images/box-image/mitech-home-infotechno-box-large-image-03-330x330.jpg',
-                'heading'                  => 'Tecnología multifunción confiable',
-                'box-large-image__content' => 'Nuestros expertos técnicos tienen talento para desarrollar <strong> software de gran calidad </strong> en función de las necesidades de los clientes, avances y tendencias tecnológicas.',
-            ),
-        ),
-        'section-under-heading' => array(
-            'href' => '#',
-            'lbl'  => 'Aprenda más sobre cómo trabajamos'
         )
-    ),
-    #Estadisticas
-    'fun-fact-wrapper' => array(
-        'bo_mostrar' => 0
-    ),
-    #Video Anuncio
-    'infotechno-video-wrapper' => array(
-
-    ),
-    #Proyectos
-    'projects-wrapper' => array(
-        'section-title-wrap' => array(
-            'section-sub-title' => 'Soluciones TI/Proyectos',
-            'heading'           => 'Nuestros proyectos que<span class="text-color-primary">&nbsp;destacamos</span>'
-        ),
-        'projects-wrap'         => array(
-            array(
-                'href'            => 'https://creativerse.school.app',
-                'img'             => 'assets/images/projects/case-study-01-480x298.jpg',
-                'heading'         => 'Creativerse School',
-                'post-categories' => 'Software/Aplicación de Gestión',
-                'text'            => 'ERP orientado a instituciones educacionales con el objetivo de mejorar la gestión y optimizar los procesos organizacionales.',
-            ),
-            array(
-                'href'            => 'javascript:void(0)',
-                'img'             => 'assets/images/projects/case-study-02-480x298.jpg',
-                'heading'         => 'Creativerse Risk',
-                'post-categories' => 'Software/Aplicación de Gestión',
-                'text'            => 'Optimiza el proceso de inspección, análisis y ajustes a través de nuestra plataforma para la industria de seguros.',
-            ),
-            array(
-                'href'            => 'javascript:void(0)',
-                'img'             => 'assets/images/projects/case-study-03-480x298.jpg',
-                'heading'         => 'Creativerse Iposs',
-                'post-categories' => 'Software/Aplicación de Gestión',
-                'text'            => 'Realiza tus ventas, manejo de inventario, reportes y facturación electronica a través de nuestra plataforma de punto de venta.',
-            ),
-        ),
-        'section-under-heading' => array(
-            'text_p' => 'Los desafíos son solo oportunidades disfrazadas.',
-            'text_s' => '¡Acepta el desafío!',
-            'href'   => '#'
-        )
-    ),
-    #Testimonios
-    'testimonial-slider-area' => array(
-        'bo_mostrar' => 0
-    ),
-    #Acerca de, noticias, tendencias, tecnologias, etc.
-    'blog-section-wrapper' => array(
-
     ),
     #Contacto
-    'contact-us-section-wrappaer' => array(
+    'contact-us-area' => array(
 
     ),
-    #Footer
+    #footer
     'footer-area-wrapper' => array(
-
+        'footer-area'     => array(
+            array(
+                'col'                  => 'col-lg-4 col-md-6 col-sm-6',
+                'footer-widget__logo'  => 'assets/images/logo/dark-logo-160x48.png',
+                'footer-widget__list'  => array(
+                    '#2340000 Valparaíso, Valparaíso, Chile',
+                    '<a href="mailto:creativerse.ltda@gmail.com" class="hover-style-link">creativerse.ltda@gmail.com</a>',
+                    '<a href="tel:123344556" class="hover-style-link text-black font-weight--bold">(+569) 56937966</a>',
+                    '<a href="http://www.creativerse.cl/" class="hover-style-link text-color-primary">www.creativerse.cl</a>'
+                )
+            ),
+            array(
+                'col'                  => 'col-lg-2 col-md-4 col-sm-6',
+                'footer-widget__title' => 'Servicios TI',
+                'footer-widget__list'  => array(
+                    '<a href="javascript:void(0)" class="hover-style-link">Servicio TI 1</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Servicio TI 2</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Servicio TI 3</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Servicio TI 4</a>'
+                )
+            ),
+            array(
+                'col'                  => 'col-lg-2 col-md-4 col-sm-6',
+                'footer-widget__title' => 'Enlaces rápidos',
+                'footer-widget__list'  => array(
+                    '<a href="javascript:void(0)" class="hover-style-link">Condiciones de pago</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Condiciones de pago</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Política de privacidad</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Donde encontrarnos</a>'
+                )
+            ),
+            array(
+                'col'                  => 'col-lg-2 col-md-4 col-sm-6',
+                'footer-widget__title' => 'Soporte',
+                'footer-widget__list'  => array(
+                    '<a href="javascript:void(0)" class="hover-style-link">Foro de Soporte</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Ayuda &amp; FAQ</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Contáctanos</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Precios y planes</a>',
+                    '<a href="javascript:void(0)" class="hover-style-link">Política de cookies</a>'
+                )
+            ),
+            array(
+                'col'                  => 'col-lg-2 col-md-4 col-sm-6',
+                'section-space--mb_50' => 'true',
+                'footer-widget__list'  => array(
+                    '<a href="javascript:void(0)" class="image_btn"><img class="img-fluid" src="assets/images/icons/aeroland-button-google-play.jpg" alt=""></a>',
+                    '<a href="javascript:void(0)" class="image_btn"><img class="img-fluid" src="assets/images/icons/aeroland-button-app-store.jpg" alt=""></a>',
+                )
+            )
+        ),
+        'footer-copyright-area'  => array(
+            'copyright-text'     => '&copy;2020 Creativerse Ltda. <a href="http://www.creativerse.cl/">Todos los derechos reservados.</a>',
+            'ht-social-networks' => array(
+                '<a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-link hint--bounce hint--top hint--primary"><i class="fab fa-twitter link-icon"></i></a>',
+                '<a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary"><i class="fab fa-facebook-f link-icon"></i></a>',
+                '<a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-link hint--bounce hint--top hint--primary"><i class="fab fa-instagram link-icon"></i></a>',
+                '<a href="https://linkedin.com" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary"><i class="fab fa-linkedin link-icon"></i></a>'
+            ),
+        )
     )
 );

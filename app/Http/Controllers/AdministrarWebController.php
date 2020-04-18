@@ -22,7 +22,7 @@ class AdministrarWebController extends BaseController
         include_once('../_configurations/main.php');
         #Set de datos para la vista.
         $viewData['main_config']  = $main_config;
-        $viewData['main_content'] = 'index.main_content';
+        //$viewData['main_content'] = 'index.main_content';
         #Retornar template+index
         return view('template', ['viewData' => $viewData]);
     }

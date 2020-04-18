@@ -59,276 +59,200 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--====================  header area ====================-->
-    <div class="header-area header-area--absolute">
+    <?php //print_r($viewData);?>
+    <div class="header-area header-area--default">
 
-        <div class="header-top-bar-info border-bottom d-none d-lg-block">
-            <div class="container">
+        <!-- Header Top Wrap Start -->
+        <div class="header-top-wrap border-bottom">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="top-bar-wrap">
-                            <div class="top-bar-left">
-                                <div class="top-bar-text text-white">{{ $viewData['main_config']['header-top-bar-info']['top-bar-left'] }}</div>
-                            </div>
-                            <div class="top-bar-right">
-                                <ul class="top-bar-info">
-                                    <li class="info-item">
-                                        <a href="{{ $viewData['main_config']['header-top-bar-info']['top-bar-right'][0]['href'] }}" class="info-link text-white">
-                                            <i class="{{ $viewData['main_config']['header-top-bar-info']['top-bar-right'][0]['icon'] }}"></i>
-                                            <span class="info-text">{!! $viewData['main_config']['header-top-bar-info']['top-bar-right'][0]['info-text'] !!}</span>
-                                        </a>
-                                    </li>
-                                    <li class="info-item text-white">
-                                        <i class="{{ $viewData['main_config']['header-top-bar-info']['top-bar-right'][1]['icon'] }}"></i>
-                                        <span class="info-text">{{ $viewData['main_config']['header-top-bar-info']['top-bar-right'][1]['info-text'] }}</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-lg-12">
+                        <p class="text-center top-message">{!!$viewData['main_config']['header-top-wrap']['top-message']!!}</a></p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Header Top Wrap End -->
+
+        <!-- Header Bottom Wrap Start -->
         <div class="header-bottom-wrap header-sticky">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="header position-relative">
+                        <div class="header default-menu-style position-relative">
+
                             <!-- brand logo -->
                             <div class="header__logo">
                                 <a href="index.html">
-                                    <img src="{{ $viewData['main_config']['header-bottom-wrap']['header__logo']['light-logo'] }}" class="img-fluid light-logo" alt="">
-                                    <img src="{{ $viewData['main_config']['header-bottom-wrap']['header__logo']['light-logo'] }}" class="img-fluid dark-logo" alt="">
+                                    <img src="{{ URL::asset($viewData['main_config']['header-bottom-wrap']['header__logo']) }}" class="img-fluid" alt="">
                                 </a>
                             </div>
 
-                            <div class="header-right">
-                                <!-- navigation menu -->
-                                <div class="header__navigation menu-style-four d-none d-xl-block">
-                                    <nav class="navigation-menu">
-                                        <ul>
-                                            @foreach ($viewData['main_config']['header-bottom-wrap']['header__navigation'] as $valNav)
-                                                <li class="{{ !empty($valNav['sub_menu']) ? 'has-children has-children--multilevel-submenu' : ''}}{{ $valNav['lbl_menu'] == 'Inicio' ? 'active' : ''  }}" >
-                                                    <a href="{{ $valNav['href'] }}"><span>{{ $valNav['lbl_menu'] }}</span></a>
-                                                    @if (!empty($valNav['sub_menu']))
-                                                        <ul class="submenu">
-                                                            @foreach ($valNav['sub_menu'] as $valSubMenu1)
-                                                                <li class="{{ !empty($valSubMenu1['sub_menu']) ? 'has-children' : '' }}">
-                                                                    <a href="{{ $valSubMenu1['href'] }}"><span>{{ $valSubMenu1['lbl_sub_menu'] }}</span></a>
-                                                                    @if (!empty($valSubMenu1['sub_menu']))
-                                                                        <ul class="submenu">
-                                                                            @foreach ($valSubMenu1['sub_menu'] as $valSubMenu2)
-                                                                                <li><a href="{{ $valSubMenu2['href'] }}"><span>{{ $valSubMenu2['lbl_sub_menu'] }}</span></a></li>
-                                                                            @endforeach
-                                                                        </ul>
-                                                                    @endif
-                                                                </li>
-                                                            @endforeach   
-                                                        </ul>
-                                                    @endif
+                            <!-- header midle box  -->
+                            <div class="header-midle-box">
+                                <div class="header-bottom-wrap d-md-block d-none">
+                                    <div class="header-bottom-inner">
+                                        <div class="header-bottom-left-wrap">
+                                            <!-- navigation menu -->
+                                            <div class="header__navigation d-none d-xl-block">
+                                                <nav class="navigation-menu primary--menu">
+                                                    <ul>
+                                                    @foreach ($viewData['main_config']['header-bottom-wrap']['header-midle-box'] as $valNav)
+                                                        <li class="{{ !empty($valNav['sub_menu']) ? 'has-children has-children--multilevel-submenu' : ''}}{{ $valNav['lbl_menu'] == 'Inicio' ? 'active' : ''  }}" >
+                                                            <a href="{{ $valNav['href'] }}"><span>{{ $valNav['lbl_menu'] }}</span></a>
+                                                            @if (!empty($valNav['sub_menu']))
+                                                                <ul class="submenu">
+                                                                    @foreach ($valNav['sub_menu'] as $valSubMenu1)
+                                                                        <li class="{{ !empty($valSubMenu1['sub_menu']) ? 'has-children' : '' }}">
+                                                                            <a href="{{ $valSubMenu1['href'] }}"><span>{{ $valSubMenu1['lbl_sub_menu'] }}</span></a>
+                                                                            @if (!empty($valSubMenu1['sub_menu']))
+                                                                                <ul class="submenu">
+                                                                                    @foreach ($valSubMenu1['sub_menu'] as $valSubMenu2)
+                                                                                        <li><a href="{{ $valSubMenu2['href'] }}"><span>{{ $valSubMenu2['lbl_sub_menu'] }}</span></a></li>
+                                                                                    @endforeach
+                                                                                </ul>
+                                                                            @endif
+                                                                        </li>
+                                                                    @endforeach   
+                                                                </ul>
+                                                            @endif
+                                                        </li>
+                                                    @endforeach
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- header right box -->
+                            <div class="header-right-box">
+                                <div class="header-right-inner" id="hidden-icon-wrapper">
+                                    
+                                    <!-- language-menu -->
+                                    @if ($viewData['main_config']['header-bottom-wrap']['header-right-box']['language-menu']['bo_mostrar'] == 1)
+                                        <div class="language-menu">
+                                            <ul>
+                                                <li>
+                                                    <a href="{{ $viewData['main_config']['header-bottom-wrap']['header-right-box']['language-menu']['href'] }}" class="">
+                                                        <span class="wpml-ls-native">{{ $viewData['main_config']['header-bottom-wrap']['header-right-box']['language-menu']['lbl_menu'] }}</span>
+                                                    </a>
+                                                    <ul class="ls-sub-menu">
+                                                        @foreach ($viewData['main_config']['header-bottom-wrap']['header-right-box']['language-menu']['ls-sub-menu'] as $valLs)
+                                                            @php 
+                                                                $target = strpos($valLs['href'], 'http') !== false ? '_blank' : ''; 
+                                                            @endphp
+                                                            <li class="">
+                                                                <a href="{{ $valLs['href'] }}" class="" target="{{ $target }}">
+                                                                   <span class="wpml-ls-native">{{ $valLs['lbl_sub_menu'] }}</span>
+                                                                </a>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
                                                 </li>
-                                            @endforeach
-                                        </ul>
-                                    </nav>
+                                            </ul>
+                                        </div>
+                                    @endif
+
+                                    <!-- header-search-form -->
+                                    @if ($viewData['main_config']['header-bottom-wrap']['header-right-box']['header-search-form']['bo_mostrar'] == 1)
+                                        <div class="header-search-form default-search">
+                                            <div class="search-form-top">
+                                                <input class="search-field" type="text" placeholder="Buscar…">
+                                                <a class="search-submit" style="cursor:default;">
+                                                    <i class="search-btn-icon fa fa-search"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    @endif
                                 </div>
 
                                 <!-- mobile menu -->
-                                <div class="mobile-navigation-icon white-md-icon d-block d-xl-none" id="mobile-menu-trigger">
+                                <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">
                                     <i></i>
                                 </div>
+                                <!-- hidden icons menu -->
+                                <div class="hidden-icons-menu d-block d-md-none" id="hidden-icon-trigger">
+                                    <a href="javascript:void(0)">
+                                        <i class="far fa-ellipsis-h-alt"></i>
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Header Bottom Wrap End -->
 
     </div>
     <!--====================  End of header area  ====================-->
 
+    <!--====================  site-wrapper area  
 
-
-
-
-
-
+    ====================-->
     <div class="site-wrapper-reveal">
-        <!--============ Resolutions Hero Start ============-->
-        <div class="service-hero-wrapper resolutions-hero-space resolutions-hero-bg position-relative">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 ml-auto mr-auto">
-                        <div class="service-hero-wrap wow move-up">
-                            <div class="service-hero-text text-center">
-                                <h3 class="text-white">{{ $viewData['main_config']['service-hero-wrapper']['h3'] }}</h3>
-                                <h1 class="font-weight--reguler text-white mb-30" style="font-weight: 800;font-size: 95px;">{{ $viewData['main_config']['service-hero-wrapper']['h1'] }}</h1>
-                                <p class="text-white">{{ $viewData['main_config']['service-hero-wrapper']['p'] }}</p>
+        @include($viewData['main_content'])
+    </div>
+    <!--====================  End of site-wrapper area  ====================-->
 
-                                <div class="hero-button-group section-space--mt_50">
-                                    <a href="{{ $viewData['main_config']['service-hero-wrapper']['button_p']['href'] }}" class="ht-btn ht-btn-md">{{ $viewData['main_config']['service-hero-wrapper']['button_p']['lbl'] }}</a>
-                                    <a href="{{ $viewData['main_config']['service-hero-wrapper']['button_s']['href'] }}" class="ht-btn ht-btn-md btn--white"><span class="btn-icon mr-2"><i class="fa fa-play"></i></span> {{ $viewData['main_config']['service-hero-wrapper']['button_s']['lbl'] }}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="vc_row-separator center_curve_alt bottom"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100">
-                    <path d="M 0 0 L0 100 L100 100 L100 0 Q 50 200 0 0"></path>
-                </svg></div>
-        </div>
-        <!--============ Resolutions Hero End ============-->
-
-
-
-
-        <!--===========  feature-images-wrapper  Start =============-->
-        <div class="feature-images-wrapper bg-gray">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="feature-images__five resolutions-hero-bottom">
-                            <div class="row">
-                                @foreach ($viewData['main_config']['feature-images-wrappe']['ht-box-images'] as $valFIW)
-                                    <div class="col-lg-4 col-md-6 wow move-up">
-                                        <!-- ht-box-icon Start -->
-                                        <div class="ht-box-images style-05">
-                                            <div class="image-box-wrap">
-                                                <div class="box-image">
-                                                    <div class="default-image">
-                                                        <img class="img-fulid" src="{{ $valFIW['box-image']['default-image'] }}" alt="">
-                                                    </div>
-                                                    <div class="hover-images">
-                                                        <img class="img-fulid" src="{{ $valFIW['box-image']['hover-images'] }}" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="content">
-                                                    <h5 class="heading">{{ $valFIW['content']['heading'] }}</h5>
-                                                    <div class="text">{{ $valFIW['content']['text'] }}</div>
-                                                    <div class="box-images-arrow">
-                                                        <a href="{{ $valFIW['content']['href'] }}">
-                                                            <span class="button-text">Más Detalles</span>
-                                                            <i class="far fa-long-arrow-right"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- ht-box-icon End -->
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-                        <div class="section-under-heading text-center section-space--mt_80">{!! $viewData['main_config']['feature-images-wrappe']['section-under-heading'] !!}</div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--===========  feature-images-wrapper  End =============-->
-
-
-
-
-
-    
-
-        <!--===========  feature-icon-wrapper  Start =============-->
-        <div class="feature-icon-wrapper bg-gray section-space--ptb_100">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title-wrap text-center section-space--mb_40">
-                            <h6 class="section-sub-title mb-20">{{ $viewData['main_config']['feature-icon-wrapper']['section-title-wrap']['section-sub-title'] }}</h6>
-                            <h3 class="heading" style="font-size: 38px;">{!! $viewData['main_config']['feature-icon-wrapper']['section-title-wrap']['heading'] !!}</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="feature-list__two">
-                            <div class="row">
-                                @foreach($viewData['main_config']['feature-icon-wrapper']['feature-list__two'] as $keyFLT => $valFLT)
-                                    <div class="col-lg-4 col-md-6 wow move-up">
-                                        <div class="ht-box-icon style-02 single-svg-icon-box">
-                                            <div class="icon-box-wrap">
-                                                <div class="icon">
-                                                    <div class="svg-icon" id="svg-{{ $keyFLT }}" data-svg-icon="{{ $valFLT['icon'] }}"></div>
-                                                </div>
-                                                <div class="content">
-                                                    <h5 class="heading">{{ $valFLT['heading'] }}</h5>
-                                                    <div class="text">{{ $valFLT['text'] }}</div>
-                                                    <div class="feature-btn">
-                                                        <a href="{{ $valFLT['href'] }}">
-                                                            <span class="button-text">Más Detalles</span>
-                                                            <i class="far fa-long-arrow-right"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <!--<div class="col-lg-12">
-                        <div class="feature-list-button-box mt-30 text-center">
-                            <a href="{{ $viewData['main_config']['feature-icon-wrapper']['feature-list-button-box']['button_p']['href'] }}" class="ht-btn ht-btn-md">{{ $viewData['main_config']['feature-icon-wrapper']['feature-list-button-box']['button_p']['lbl'] }}</a>
-                            <a href="{{ $viewData['main_config']['feature-icon-wrapper']['feature-list-button-box']['button_s']['href'] }}" class="ht-btn ht-btn-md ht-btn--outline">{{ $viewData['main_config']['feature-icon-wrapper']['feature-list-button-box']['button_s']['lbl'] }}</a>
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-        </div>
-        <!--===========  feature-icon-wrapper  End =============-->
-
-
-  
 
         <!--====================  footer area ====================-->
-        <div class="footer-area-wrapper reveal-footer bg-gray">
+        <div class="footer-area-wrapper bg-gray">
             <div class="footer-area section-space--ptb_80">
                 <div class="container">
                     <div class="row footer-widget-wrapper">
-						@foreach($viewData['main_config']['footer-area-wrapper']['footer-area'] as $valFA)
-							<div class="{{ $valFA['col'] }} footer-widget">
-								@if(isset($valFA['section-space--mb_50']))
-									<div class="footer-widget__title section-space--mb_50"></div>
-								@endif
-								@if(isset($valFA['footer-widget__logo']))
-									<div class="footer-widget__logo mb-30">
-										<img src="{{ $valFA['footer-widget__logo'] }}" class="img-fluid" alt="">
-									</div>
-								@endif
-								@if(isset($valFA['footer-widget__title']))
-									<h6 class="footer-widget__title mb-20">{{ $valFA['footer-widget__title'] }}</h6>
-								@endif
-								<ul class="footer-widget__list">
-									@foreach($valFA['footer-widget__list'] as $valFWL)
-										<li>{!! $valFWL !!}</li>
-									@endforeach
-								</ul>
-							</div>
-						@endforeach
+                        <div class="col-lg-4 col-md-6 col-sm-6 footer-widget">
+                            <div class="footer-widget__logo mb-30">
+                                <img src="{{ URL::asset('assets/images/logo/dark-logo-160x48.png') }}" class="img-fluid" alt="">
+                            </div>
+                            <ul class="footer-widget__list">
+                                <li>58 Howard Street #2 San Francisco, CA 941</li>
+                                <li><a href="mailto:contact@aeroland.com" class="hover-style-link">contact@aeroland.com</a></li>
+                                <li><a href="tel:123344556" class="hover-style-link text-black font-weight--bold">(+68)1221 09876</a></li>
+                                <li><a href="http://www.creativerse.cl/" class="hover-style-link text-color-primary">www.creativerse.cl</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">IT Services</h6>
+                            <ul class="footer-widget__list">
+                                <li><a href="#" class="hover-style-link">Managed IT</a></li>
+                                <li><a href="#" class="hover-style-link">IT Support</a></li>
+                                <li><a href="#" class="hover-style-link">IT Consultancy</a></li>
+                                <li><a href="#" class="hover-style-link">Cloud Computing</a></li>
+                                <li><a href="#" class="hover-style-link">Cyber Security</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">Quick links</h6>
+                            <ul class="footer-widget__list">
+                                <li><a href="#" class="hover-style-link">Pick up locations</a></li>
+                                <li><a href="#" class="hover-style-link">Terms of Payment</a></li>
+                                <li><a href="#" class="hover-style-link">Privacy Policy</a></li>
+                                <li><a href="#" class="hover-style-link">Where to Find Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">Support</h6>
+                            <ul class="footer-widget__list">
+                                <li><a href="#" class="hover-style-link">Forum Support</a></li>
+                                <li><a href="#" class="hover-style-link">Help & FAQ</a></li>
+                                <li><a href="#" class="hover-style-link">Contact Us</a></li>
+                                <li><a href="#" class="hover-style-link">Pricing and plans</a></li>
+                                <li><a href="#" class="hover-style-link">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <div class="footer-widget__title section-space--mb_50"></div>
+                            <ul class="footer-widget__list">
+                                <li><a href="#" class="image_btn"><img class="img-fluid" src="{{ URL::asset('assets/images/icons/aeroland-button-google-play.jpg') }}" alt=""></a></li>
+                                <li><a href="#" class="image_btn"><img class="img-fluid" src="{{ URL::asset('assets/images/icons/aeroland-button-app-store.jpg') }}" alt=""></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -336,15 +260,31 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-6 text-center text-md-left">
-                            <span class="copyright-text">{!! $viewData['main_config']['footer-area-wrapper']['footer-copyright-area']['copyright-text'] !!}</span>
+                            <span class="copyright-text">&copy; 2019 Mitech. <a href="https://hasthemes.com/">All Rights Reserved.</a></span>
                         </div>
                         <div class="col-md-6 text-center text-md-right">
                             <ul class="list ht-social-networks solid-rounded-icon">
-								@foreach($viewData['main_config']['footer-area-wrapper']['footer-copyright-area']['ht-social-networks'] as $valHSN)
-									<li class="item">
-										{!! $valHSN !!}
-									</li>
-								@endforeach
+
+                                <li class="item">
+                                    <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-twitter link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-facebook-f link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-instagram link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://linkedin.com" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-linkedin link-icon"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -357,13 +297,16 @@
 
 
 
+
+
+
+
         <!--====================  scroll top ====================-->
         <a href="#" class="scroll-top" id="scroll-top">
             <i class="arrow-top fal fa-long-arrow-up"></i>
             <i class="arrow-bottom fal fa-long-arrow-up"></i>
         </a>
         <!--====================  End of scroll top  ====================-->
-
 
         <!--====================  mobile menu overlay ====================-->
         <div class="mobile-menu-overlay" id="mobile-menu-overlay">
@@ -375,7 +318,7 @@
                                 <!-- logo -->
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="assets/images/logo/logo-dark.png" class="img-fluid" alt="">
+                                        <img src="{{ URL::asset('assets/images/logo/logo-dark.png') }}" class="img-fluid" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -527,6 +470,37 @@
 
 
 
+
+
+
+
+        <!--====================  search overlay ====================-->
+        <div class="search-overlay" id="search-overlay">
+
+            <div class="search-overlay__header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 ml-auto col-4">
+                            <!-- search content -->
+                            <div class="search-content text-right">
+                                <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-overlay__inner">
+                <div class="search-overlay__body">
+                    <div class="search-overlay__form">
+                        <form action="#">
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of search overlay  ====================-->
+
         <!-- JS
     ============================================ -->
         <!-- Modernizer JS -->
@@ -591,7 +565,7 @@
     -->
 
         <!-- Main JS -->
-        <script src="assets/js/main.js"></script>
+        <script src="{{ URL::asset('assets/js/main.js') }}"></script>
 
 
 </body>
