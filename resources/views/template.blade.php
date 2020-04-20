@@ -138,7 +138,7 @@
                                                                         </ul>
                                                                     @endif
                                                                 </li>
-                                                            @endforeach   
+                                                            @endforeach
                                                         </ul>
                                                     @endif
                                                 </li>
@@ -247,7 +247,7 @@
 
 
 
-    
+
 
         <!--===========  feature-icon-wrapper  Start =============-->
         <div class="feature-icon-wrapper bg-gray section-space--ptb_100">
@@ -301,8 +301,72 @@
         </div>
         <!--===========  feature-icon-wrapper  End =============-->
 
+        <!--===========  Flujo proceso Start =============-->
+        <div class="gradation-process-area section-space--ptb_100">
+            <div class="container">
 
-  
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="gradation-title-wrapper section-space--mb_60">
+                            <div class="gradation-title-wrap ">
+                                <h6 class="section-sub-title text-black mb-20">{{ $viewData['main_config']['gradation-process-area']['gradation-title-wrap']['section-sub-title'] }}</h6>
+                                <h4 class="heading">{!! $viewData['main_config']['gradation-process-area']['gradation-title-wrap']['heading'] !!}</h4>
+                            </div>
+
+
+                            <div class="gradation-sub-heading">
+                                <h3 class="heading">{!! $viewData['main_config']['gradation-process-area']['gradation-sub-heading']['heading'] !!}</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ht-gradation style-01">
+                            <!-- Single item gradation Start -->
+                            @foreach($viewData['main_config']['ht-gradation'] as $varg => $var)
+                            <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
+
+                                    <h6 class="circle">{{ $var['circle'] }}</h6>
+                                </div>
+
+                                <div class="content-wrap">
+
+                                    <h6 class="heading">{{ $var['heading'] }}</h6>
+
+                                    <div class="text">{{ $var['text'] }}</div>
+
+                                    <a class="gradation-btn" href="#">
+                                        {!! $var['button-text'] !!}
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+                            @endforeach
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
 
         <!--====================  footer area ====================-->
         <div class="footer-area-wrapper reveal-footer bg-gray">
