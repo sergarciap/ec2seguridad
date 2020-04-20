@@ -148,7 +148,6 @@ array(
     'feature-icon-wrapper' => array(
         'section-title-wrap'    => array(
             'section-sub-title' => 'Nuestros Servicios',
-            'heading'           => 'For your very specific industry,<br> we provide <span class="text-color-primary"> truly prominent IT solutions.',
             'heading'           => 'Para su negocio u organización,<br> Ofrecemos <span class="text-color-primary"> las mejores soluciones TI.',
         ),
         'feature-list__two'=> array(
@@ -200,6 +199,74 @@ array(
             )
         )
     ),
+
+
+    #Flujo de proceso
+    'gradation-process-area' => array(
+        'gradation-title-wrap' => array(
+            'section-sub-title' => 'CÓMO TRABAJAMOS',
+            'heading' => 'Flujo del proceso <span class="text-color-primary"> <br>para concretar tu negocio</span>'
+        ),
+        'gradation-sub-heading' => array(
+            'heading' => '<mark>05</mark> Etapas'
+        )
+    ),
+    'ht-gradation' => array(
+        array(
+            'circle' => '1',
+            'heading' => 'Contacto' ,
+            'text' => 'Todo comienza cuando nos contactas, a través de nuestro formulario de contacto. En unos momentos nos estaremos comunicando contigo, para solicitarte información respecto a tu proyecto web.',
+            'button-text' => '<span class="button-text" data-text="look more">
+            Ver más </span>
+            <span class="button-icon far fa-long-arrow-right"></span>'
+        ),
+        array(
+            'circle' => '2',
+            'heading' => 'Revisión' ,
+            'text' => 'De acuerdo a la información obtenida, te propondremos una cotización aproximada del proyecto.',
+            'button-text' => '<span class="button-text" data-text="look more">
+            Ver más </span>
+            <span class="button-icon far fa-long-arrow-right"></span>'
+        ),
+        array(
+            'circle' => '3',
+            'heading' => 'Interacción' ,
+            'text' => 'De resultar todo bien, acordaremos una reunión vía chat o telefónica (lo que gustes), para que podamos ir construyendo conjuntamente lo que buscas en tu proyecto web. ',
+            'button-text' => '<span class="button-text" data-text="look more">
+            Ver más </span>
+            <span class="button-icon far fa-long-arrow-right"></span>'
+        ),
+        array(
+            'circle' => '4',
+            'heading' => 'Propuestas y prototipo' ,
+            'text' => 'En base a lo conversado en el punto anterior, te presentaremos una propuesta para el proyecto, seguida de un prototipo. Tú decides cuál se acomoda más a tus necesidades! ',
+            'button-text' => '<span class="button-text" data-text="look more">
+            Ver más </span>
+            <span class="button-icon far fa-long-arrow-right"></span>'
+        ),
+        array(
+            'circle' => '5',
+            'heading' => 'Implementación' ,
+            'text' => 'La última fase consiste en la concretación según lo requerido y dejar todo en marcha, para que puedas empezar a trabajar con tu proyecto web!',
+            'button-text' => '<span class="button-text" data-text="look more">
+            Ver más </span>
+            <span class="button-icon far fa-long-arrow-right"></span>'
+        )
+
+        ),
+
+
+
+
+
+
+
+
+
+
+
+
+
     #Contacto
     'contact-us-area' => array(
 
