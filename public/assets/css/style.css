@@ -12882,6 +12882,8 @@ blockquote {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 20px;
+  
+  font-size: 43px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -12899,7 +12901,8 @@ blockquote {
 .service-hero-text h1 {
   color: #ffffff;
   font-weight: 700;
-  font-size: 120px;
+  /*font-size: 120px;*/
+  font-size: 115px;
   line-height: 1.09;
 }
 

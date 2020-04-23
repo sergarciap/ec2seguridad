@@ -48,12 +48,32 @@ array(
                 'sub_menu' => array(
                     array(
                         'href'         => 'javascript:void(0)',
-                        'lbl_sub_menu' => 'Servicio 1',
+                        'lbl_sub_menu' => 'Estategia & Consultoria',
                         'sub_menu'     => array()
                     ),
                     array(
                         'href'         => 'javascript:void(0)',
-                        'lbl_sub_menu' => 'Servicio 2',
+                        'lbl_sub_menu' => 'Proyectos Personalizados',
+                        'sub_menu'     => array()
+                    ),
+                    array(
+                        'href'         => 'javascript:void(0)',
+                        'lbl_sub_menu' => 'Marketing Digital',
+                        'sub_menu'     => array()
+                    ),
+                    array(
+                        'href'         => 'javascript:void(0)',
+                        'lbl_sub_menu' => 'Integración de Plataformas',
+                        'sub_menu'     => array()
+                    ),
+                    array(
+                        'href'         => 'javascript:void(0)',
+                        'lbl_sub_menu' => 'Plan de Infraestructura',
+                        'sub_menu'     => array()
+                    ),
+                    array(
+                        'href'         => 'javascript:void(0)',
+                        'lbl_sub_menu' => 'Mantención & Soporte',
                         'sub_menu'     => array()
                     )
                 )
@@ -93,9 +113,10 @@ array(
     ),
     #Banner imagen, textos principales.
     'service-hero-wrapper' => array(
-        'h3' => 'Servicios Tecnológicos Para',
-        'h1' => 'Tu Organización',
-        'p'  => 'Diseño, administración & servicios tecnológicos altamente personalizados.',
+        'h3' => 'La transformación digital  <br> no conoce fronteras',
+        'h1' => 'Ni sectores.',
+        //'p'  => 'Diseño, administración & servicios tecnológicos altamente personalizados.',
+        'p'  => 'Servicios tecnológicos altamente personalizados & a tu alcance. <a href="javascript:void(0)" style="color: #d2a98e;">¡Contáctanos!</a>',
         'button_p'  => array(
             'href'  => 'javascript:void(0)',
             'lbl'   => 'Consulta gratis'
@@ -142,48 +163,48 @@ array(
                 )
             )
         ),
-        'section-under-heading' => 'Los desafíos son solo oportunidades disfrazadas. <a href="javascript:void(0)">¡Contáctanos!</a>',
+        'section-under-heading' => '¡Hey!, no te quedes fuera de la transformación digital. <a href="javascript:void(0)">¡Contáctanos!</a>',
     ),
     #Servicios
     'feature-icon-wrapper' => array(
         'section-title-wrap'    => array(
             'section-sub-title' => 'Nuestros Servicios',
-            'heading'           => 'Para su negocio u organización,<br> Ofrecemos <span class="text-color-primary"> las mejores soluciones TI.',
+            'heading'           => '¡Ven a innovar junto a nosotros!<br> Implementamos <a href="javasript:void(0)"><code class="text-color-primary"> &lt;Tecnología a tu Alcance&gt;. </code></a>',
         ),
         'feature-list__two'=> array(
             array(
-                'icon'       => 'assets/images/svg/linea-basic-heart.svg',
-                'heading'    => 'Diseño de TI',
+                'icon'       => 'assets/images/svg/basic-gear.svg',
+                'heading'    => 'Estrategia & Consultoria',
                 'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                 'href'       => 'javascript:void(0)'
             ),
             array(
-                'icon'       => 'assets/images/svg/linea-basic-case.svg',
-                'heading'    => 'Gestión de TI',
+                'icon'       => 'assets/images/svg/basic-todolist-pen.svg',
+                'heading'    => 'Proyectos Personalizados',
                 'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                 'href'       => 'javascript:void(0)'
             ),
             array(
-                'icon'       => 'assets/images/svg/linea-basic-alarm.svg',
-                'heading'    => 'Seguridad de datos',
+                'icon'       => 'assets/images/svg/basic-lightbulb.svg',
+                'heading'    => 'Marketing Digital',
                 'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                 'href'       => 'javascript:void(0)'
             ),
             array(
-                'icon'       => 'assets/images/svg/linea-basic-geolocalize-05.svg',
-                'heading'    => 'Reforma empresarial',
+                'icon'       => 'assets/images/svg/basic-share.svg',
+                'heading'    => 'Integración de Plataformas',
                 'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                 'href'       => 'javascript:void(0)'
             ),
             array(
                 'icon'       => 'assets/images/svg/linea-ecommerce-money.svg',
-                'heading'    => 'Plan de infraestructura',
+                'heading'    => 'Plan de Infraestructura',
                 'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                 'href'       => 'javascript:void(0)'
             ),
             array(
-                'icon'       => 'assets/images/svg/linea-basic-spread-text-bookmark.svg',
-                'heading'    => 'Integraciones',
+                'icon'       => 'assets/images/svg/basic-life-buoy.svg',
+                'heading'    => 'Mantención & Soporte',
                 'text'       => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..',
                 'href'       => 'javascript:void(0)'
             ),
@@ -199,8 +220,6 @@ array(
             )
         )
     ),
-
-
     #Flujo de proceso
     'gradation-process-area' => array(
         'gradation-title-wrap' => array(
@@ -252,21 +271,7 @@ array(
             Ver más </span>
             <span class="button-icon far fa-long-arrow-right"></span>'
         )
-
-        ),
-
-
-
-
-
-
-
-
-
-
-
-
-
+    ),
     #Contacto
     'contact-us-area' => array(
 

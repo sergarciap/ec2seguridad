@@ -175,9 +175,9 @@
                     <div class="col-lg-12 col-md-12 ml-auto mr-auto">
                         <div class="service-hero-wrap wow move-up">
                             <div class="service-hero-text text-center">
-                                <h3 class="text-white">{{ $viewData['main_config']['service-hero-wrapper']['h3'] }}</h3>
+                                <h3 class="text-white">{!! $viewData['main_config']['service-hero-wrapper']['h3'] !!}</h3>
                                 <h1 class="font-weight--reguler text-white mb-30">{{ $viewData['main_config']['service-hero-wrapper']['h1'] }}</h1>
-                                <p class="text-white">{{ $viewData['main_config']['service-hero-wrapper']['p'] }}</p>
+                                <p class="text-white">{!! $viewData['main_config']['service-hero-wrapper']['p'] !!}</p>
 
                                 <div class="hero-button-group section-space--mt_50">
                                     <a href="{{ $viewData['main_config']['service-hero-wrapper']['button_p']['href'] }}" class="ht-btn ht-btn-md">{{ $viewData['main_config']['service-hero-wrapper']['button_p']['lbl'] }}</a>
