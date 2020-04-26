@@ -135,8 +135,8 @@ array(
                     'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-01-hover-100x98.png'
                 ),
                 'content'      => array(
-                    'heading' => 'Micro Empresas',
-                    'text'    => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                    'heading' => 'Plan Mi negocio en la web',
+                    'text'    => 'Te ayudamos a incorporarte a la web de una forma rápida y efectiva, y a un precio justo. Incluye: Página web personalizada, Hosting anual y Marketing digital.',
                     'href'    => 'javascript:void(0)'
                 )
             ),
@@ -146,8 +146,8 @@ array(
                     'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-02-hover-100x98.png'
                 ),
                 'content'     => array(
-                    'heading' => 'Pymes',
-                    'text'    => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                    'heading' => 'Plan Posicionamiento',
+                    'text'    => 'Si ya posees un sitio web, pero no ha logrado posicionarse en los puestos deseados, te ofrecemos este plan, para que logres los resultados que buscas.',
                     'href'    => 'javascript:void(0)'
                 )
             ),
@@ -157,8 +157,8 @@ array(
                     'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-03-hover-100x98.png'
                 ),
                 'content'     => array(
-                    'heading' => 'Grandes Compañias',
-                    'text'    => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                    'heading' => 'Plan Personalizado',
+                    'text'    => 'Tú eliges lo que necesites para tu empresa, y nosotros te ofrecemos un plan a la medida. Te invitamos a ver nuestros servicios en la siguiente sección.',
                     'href'    => 'javascript:void(0)'
                 )
             )
@@ -219,59 +219,125 @@ array(
                 'lbl'   => 'Contáctanos ahora'
             )
         )
+
+
+
     ),
     #Flujo de proceso
-    'gradation-process-area' => array(
-        'gradation-title-wrap' => array(
-            'section-sub-title' => 'CÓMO TRABAJAMOS',
-            'heading' => 'Flujo del proceso <span class="text-color-primary"> <br>para concretar tu negocio</span>'
+    'flujo' => array(
+        array(
+            'gradation-process-area' => array(
+                'gradation-title-wrap' => array(
+                    'section-sub-title' => 'CÓMO TRABAJAMOS',
+                    'heading' => 'Flujo del proceso <span class="text-color-primary"> <br>para proyectos rápidos y eficientes:</span>'
+                ),
+                'gradation-sub-heading' => array(
+                    'heading' => '<mark>05</mark> Etapas'
+                )
+            ),
+            'ht-gradation' => array(
+                array(
+                    'circle' => '1',
+                    'heading' => 'Contacto' ,
+                    'text' => 'Todo comienza cuando nos contactas, a través de nuestro formulario de contacto. En unos momentos nos estaremos comunicando contigo, para solicitarte información respecto a tu proyecto web.',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                ),
+                array(
+                    'circle' => '2',
+                    'heading' => 'Revisión' ,
+                    'text' => 'De acuerdo a la información obtenida, te propondremos una cotización aproximada del proyecto.',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                ),
+                array(
+                    'circle' => '3',
+                    'heading' => 'Interacción' ,
+                    'text' => 'De resultar todo bien, acordaremos una reunión vía chat o telefónica (lo que gustes), para que podamos ir construyendo conjuntamente lo que buscas en tu proyecto web. ',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                ),
+                array(
+                    'circle' => '4',
+                    'heading' => 'Propuestas y prototipo' ,
+                    'text' => 'En base a lo conversado en el punto anterior, te presentaremos una propuesta para el proyecto, seguida de un prototipo. Tú decides cuál se acomoda más a tus necesidades! ',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                ),
+                array(
+                    'circle' => '5',
+                    'heading' => 'Implementación' ,
+                    'text' => 'La última fase consiste en la concretación según lo requerido y dejar todo en marcha, para que puedas empezar a trabajar con tu proyecto web!',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                )
+            )
         ),
-        'gradation-sub-heading' => array(
-            'heading' => '<mark>05</mark> Etapas'
-        )
+        array(
+            'gradation-process-area' => array(
+                'gradation-title-wrap' => array(
+                    'section-sub-title' => 'CÓMO TRABAJAMOS',
+                    'heading' => 'Flujo del proceso <span class="text-color-primary"> <br>para proyectos complejos y ágiles</span>'
+                ),
+                'gradation-sub-heading' => array(
+                    'heading' => '<mark>04</mark> Etapas'
+                )
+            ),
+            'ht-gradation' => array(
+                array(
+                    'circle' => '1',
+                    'heading' => 'Contacto',
+                    'text' => 'Todo comienza cuando nos contactas, a través de nuestro formulario de contacto. En unos momentos nos estaremos comunicando contigo, para solicitarte información respecto a tu proyecto web.',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                ),
+                array(
+                    'circle' => '2',
+                    'heading' => 'Reunión',
+                    'text' => 'Acordaremos una reunión vía chat o telefónica (lo que gustes), para que conozcamos conjuntamente tu proyecto y podamos definir un plan de trabajo',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                ),
+                array(
+                    'circle' => '3',
+                    'heading' => 'Ciclo de iteraciones',
+                    'text' => 'La idea es trabajar con avances funcionales a plazos fijos. En cada fin de cada iteración te presentaremos el avance, y procederemos con los antiguos y/o nuevos requerimientos que hayan surgido.',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                ),
+                array(
+                    'circle' => '4',
+                    'heading' => 'Implementación',
+                    'text' => 'La última fase consiste en la concretación según lo requerido y dejar todo en marcha, para que puedas empezar a trabajar con tu proyecto web!',
+                    'button-text' => '<span class="button-text" data-text="look more">
+                    Ver más </span>
+                    <span class="button-icon far fa-long-arrow-right"></span>'
+                )
+            )
+
+
+
+
+
+        ),
+
+
+
+
     ),
-    'ht-gradation' => array(
-        array(
-            'circle' => '1',
-            'heading' => 'Contacto' ,
-            'text' => 'Todo comienza cuando nos contactas, a través de nuestro formulario de contacto. En unos momentos nos estaremos comunicando contigo, para solicitarte información respecto a tu proyecto web.',
-            'button-text' => '<span class="button-text" data-text="look more">
-            Ver más </span>
-            <span class="button-icon far fa-long-arrow-right"></span>'
-        ),
-        array(
-            'circle' => '2',
-            'heading' => 'Revisión' ,
-            'text' => 'De acuerdo a la información obtenida, te propondremos una cotización aproximada del proyecto.',
-            'button-text' => '<span class="button-text" data-text="look more">
-            Ver más </span>
-            <span class="button-icon far fa-long-arrow-right"></span>'
-        ),
-        array(
-            'circle' => '3',
-            'heading' => 'Interacción' ,
-            'text' => 'De resultar todo bien, acordaremos una reunión vía chat o telefónica (lo que gustes), para que podamos ir construyendo conjuntamente lo que buscas en tu proyecto web. ',
-            'button-text' => '<span class="button-text" data-text="look more">
-            Ver más </span>
-            <span class="button-icon far fa-long-arrow-right"></span>'
-        ),
-        array(
-            'circle' => '4',
-            'heading' => 'Propuestas y prototipo' ,
-            'text' => 'En base a lo conversado en el punto anterior, te presentaremos una propuesta para el proyecto, seguida de un prototipo. Tú decides cuál se acomoda más a tus necesidades! ',
-            'button-text' => '<span class="button-text" data-text="look more">
-            Ver más </span>
-            <span class="button-icon far fa-long-arrow-right"></span>'
-        ),
-        array(
-            'circle' => '5',
-            'heading' => 'Implementación' ,
-            'text' => 'La última fase consiste en la concretación según lo requerido y dejar todo en marcha, para que puedas empezar a trabajar con tu proyecto web!',
-            'button-text' => '<span class="button-text" data-text="look more">
-            Ver más </span>
-            <span class="button-icon far fa-long-arrow-right"></span>'
-        )
-    ),
+
+
+
+
+
     #Contacto
     'contact-us-area' => array(
 

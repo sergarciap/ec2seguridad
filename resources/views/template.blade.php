@@ -123,25 +123,25 @@
                                     <nav class="navigation-menu">
                                         <ul>
                                             @foreach ($viewData['main_config']['header-bottom-wrap']['header__navigation'] as $valNav)
-                                                <li class="{{ !empty($valNav['sub_menu']) ? 'has-children has-children--multilevel-submenu' : ''}}{{ $valNav['lbl_menu'] == 'Inicio' ? 'active' : ''  }}" >
-                                                    <a href="{{ $valNav['href'] }}"><span>{{ $valNav['lbl_menu'] }}</span></a>
-                                                    @if (!empty($valNav['sub_menu']))
+                                            <li class="{{ !empty($valNav['sub_menu']) ? 'has-children has-children--multilevel-submenu' : ''}}{{ $valNav['lbl_menu'] == 'Inicio' ? 'active' : ''  }}">
+                                                <a href="{{ $valNav['href'] }}"><span>{{ $valNav['lbl_menu'] }}</span></a>
+                                                @if (!empty($valNav['sub_menu']))
+                                                <ul class="submenu">
+                                                    @foreach ($valNav['sub_menu'] as $valSubMenu1)
+                                                    <li class="{{ !empty($valSubMenu1['sub_menu']) ? 'has-children' : '' }}">
+                                                        <a href="{{ $valSubMenu1['href'] }}"><span>{{ $valSubMenu1['lbl_sub_menu'] }}</span></a>
+                                                        @if (!empty($valSubMenu1['sub_menu']))
                                                         <ul class="submenu">
-                                                            @foreach ($valNav['sub_menu'] as $valSubMenu1)
-                                                                <li class="{{ !empty($valSubMenu1['sub_menu']) ? 'has-children' : '' }}">
-                                                                    <a href="{{ $valSubMenu1['href'] }}"><span>{{ $valSubMenu1['lbl_sub_menu'] }}</span></a>
-                                                                    @if (!empty($valSubMenu1['sub_menu']))
-                                                                        <ul class="submenu">
-                                                                            @foreach ($valSubMenu1['sub_menu'] as $valSubMenu2)
-                                                                                <li><a href="{{ $valSubMenu2['href'] }}"><span>{{ $valSubMenu2['lbl_sub_menu'] }}</span></a></li>
-                                                                            @endforeach
-                                                                        </ul>
-                                                                    @endif
-                                                                </li>
+                                                            @foreach ($valSubMenu1['sub_menu'] as $valSubMenu2)
+                                                            <li><a href="{{ $valSubMenu2['href'] }}"><span>{{ $valSubMenu2['lbl_sub_menu'] }}</span></a></li>
                                                             @endforeach
                                                         </ul>
-                                                    @endif
-                                                </li>
+                                                        @endif
+                                                    </li>
+                                                    @endforeach
+                                                </ul>
+                                                @endif
+                                            </li>
                                             @endforeach
                                         </ul>
                                     </nav>
@@ -206,32 +206,32 @@
                         <div class="feature-images__five resolutions-hero-bottom">
                             <div class="row">
                                 @foreach ($viewData['main_config']['feature-images-wrappe']['ht-box-images'] as $valFIW)
-                                    <div class="col-lg-4 col-md-6 wow move-up">
-                                        <!-- ht-box-icon Start -->
-                                        <div class="ht-box-images style-05">
-                                            <div class="image-box-wrap">
-                                                <div class="box-image">
-                                                    <div class="default-image">
-                                                        <img class="img-fulid" src="{{ $valFIW['box-image']['default-image'] }}" alt="">
-                                                    </div>
-                                                    <div class="hover-images">
-                                                        <img class="img-fulid" src="{{ $valFIW['box-image']['hover-images'] }}" alt="">
-                                                    </div>
+                                <div class="col-lg-4 col-md-6 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-05">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <div class="default-image">
+                                                    <img class="img-fulid" src="{{ $valFIW['box-image']['default-image'] }}" alt="">
                                                 </div>
-                                                <div class="content">
-                                                    <h5 class="heading">{{ $valFIW['content']['heading'] }}</h5>
-                                                    <div class="text">{{ $valFIW['content']['text'] }}</div>
-                                                    <div class="box-images-arrow">
-                                                        <a href="{{ $valFIW['content']['href'] }}">
-                                                            <span class="button-text">Más Detalles</span>
-                                                            <i class="far fa-long-arrow-right"></i>
-                                                        </a>
-                                                    </div>
+                                                <div class="hover-images">
+                                                    <img class="img-fulid" src="{{ $valFIW['box-image']['hover-images'] }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">{{ $valFIW['content']['heading'] }}</h5>
+                                                <div class="text">{{ $valFIW['content']['text'] }}</div>
+                                                <div class="box-images-arrow">
+                                                    <a href="{{ $valFIW['content']['href'] }}">
+                                                        <span class="button-text">Más Detalles</span>
+                                                        <i class="far fa-long-arrow-right"></i>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- ht-box-icon End -->
                                     </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
                                 @endforeach
                             </div>
                         </div>
@@ -267,25 +267,25 @@
                         <div class="feature-list__two">
                             <div class="row">
                                 @foreach($viewData['main_config']['feature-icon-wrapper']['feature-list__two'] as $keyFLT => $valFLT)
-                                    <div class="col-lg-4 col-md-6 wow move-up">
-                                        <div class="ht-box-icon style-02 single-svg-icon-box">
-                                            <div class="icon-box-wrap">
-                                                <div class="icon">
-                                                    <div class="svg-icon" id="svg-{{ $keyFLT }}" data-svg-icon="{{ $valFLT['icon'] }}"></div>
-                                                </div>
-                                                <div class="content">
-                                                    <h5 class="heading">{{ $valFLT['heading'] }}</h5>
-                                                    <div class="text">{{ $valFLT['text'] }}</div>
-                                                    <div class="feature-btn">
-                                                        <a href="{{ $valFLT['href'] }}">
-                                                            <span class="button-text">Más Detalles</span>
-                                                            <i class="far fa-long-arrow-right"></i>
-                                                        </a>
-                                                    </div>
+                                <div class="col-lg-4 col-md-6 wow move-up">
+                                    <div class="ht-box-icon style-02 single-svg-icon-box">
+                                        <div class="icon-box-wrap">
+                                            <div class="icon">
+                                                <div class="svg-icon" id="svg-{{ $keyFLT }}" data-svg-icon="{{ $valFLT['icon'] }}"></div>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">{{ $valFLT['heading'] }}</h5>
+                                                <div class="text">{{ $valFLT['text'] }}</div>
+                                                <div class="feature-btn">
+                                                    <a href="{{ $valFLT['href'] }}">
+                                                        <span class="button-text">Más Detalles</span>
+                                                        <i class="far fa-long-arrow-right"></i>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 @endforeach
                             </div>
                         </div>
@@ -302,6 +302,7 @@
         <!--===========  feature-icon-wrapper  End =============-->
 
         <!--===========  Flujo proceso Start =============-->
+        @foreach($viewData['main_config']['flujo'] as $vargf => $varf)
         <div class="gradation-process-area section-space--ptb_100">
             <div class="container">
 
@@ -309,13 +310,13 @@
                     <div class="col-lg-12">
                         <div class="gradation-title-wrapper section-space--mb_60">
                             <div class="gradation-title-wrap ">
-                                <h6 class="section-sub-title text-black mb-20">{{ $viewData['main_config']['gradation-process-area']['gradation-title-wrap']['section-sub-title'] }}</h6>
-                                <h4 class="heading">{!! $viewData['main_config']['gradation-process-area']['gradation-title-wrap']['heading'] !!}</h4>
+                                <h6 class="section-sub-title text-black mb-20">{{ $varf['gradation-process-area']['gradation-title-wrap']['section-sub-title'] }}</h6>
+                                <h4 class="heading">{!! $varf['gradation-process-area']['gradation-title-wrap']['heading'] !!}</h4>
                             </div>
 
 
                             <div class="gradation-sub-heading">
-                                <h3 class="heading">{!! $viewData['main_config']['gradation-process-area']['gradation-sub-heading']['heading'] !!}</h3>
+                                <h3 class="heading">{!! $varf['gradation-process-area']['gradation-sub-heading']['heading'] !!}</h3>
                             </div>
                         </div>
 
@@ -326,7 +327,7 @@
                     <div class="col-lg-12">
                         <div class="ht-gradation style-01">
                             <!-- Single item gradation Start -->
-                            @foreach($viewData['main_config']['ht-gradation'] as $varg => $var)
+                            @foreach($varf['ht-gradation'] as $varg => $var)
                             <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
                                 <div class="line"></div>
                                 <div class="circle-wrap">
@@ -361,7 +362,8 @@
                 </div>
             </div>
         </div>
-
+        @endforeach
+        <!--===========  Flujo proceso End =============-->
 
 
 
@@ -373,26 +375,26 @@
             <div class="footer-area section-space--ptb_80">
                 <div class="container">
                     <div class="row footer-widget-wrapper">
-						@foreach($viewData['main_config']['footer-area-wrapper']['footer-area'] as $valFA)
-							<div class="{{ $valFA['col'] }} footer-widget">
-								@if(isset($valFA['section-space--mb_50']))
-									<div class="footer-widget__title section-space--mb_50"></div>
-								@endif
-								@if(isset($valFA['footer-widget__logo']))
-									<div class="footer-widget__logo mb-30">
-										<img src="{{ $valFA['footer-widget__logo'] }}" class="img-fluid" alt="">
-									</div>
-								@endif
-								@if(isset($valFA['footer-widget__title']))
-									<h6 class="footer-widget__title mb-20">{{ $valFA['footer-widget__title'] }}</h6>
-								@endif
-								<ul class="footer-widget__list">
-									@foreach($valFA['footer-widget__list'] as $valFWL)
-										<li>{!! $valFWL !!}</li>
-									@endforeach
-								</ul>
-							</div>
-						@endforeach
+                        @foreach($viewData['main_config']['footer-area-wrapper']['footer-area'] as $valFA)
+                        <div class="{{ $valFA['col'] }} footer-widget">
+                            @if(isset($valFA['section-space--mb_50']))
+                            <div class="footer-widget__title section-space--mb_50"></div>
+                            @endif
+                            @if(isset($valFA['footer-widget__logo']))
+                            <div class="footer-widget__logo mb-30">
+                                <img src="{{ $valFA['footer-widget__logo'] }}" class="img-fluid" alt="">
+                            </div>
+                            @endif
+                            @if(isset($valFA['footer-widget__title']))
+                            <h6 class="footer-widget__title mb-20">{{ $valFA['footer-widget__title'] }}</h6>
+                            @endif
+                            <ul class="footer-widget__list">
+                                @foreach($valFA['footer-widget__list'] as $valFWL)
+                                <li>{!! $valFWL !!}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -404,11 +406,11 @@
                         </div>
                         <div class="col-md-6 text-center text-md-right">
                             <ul class="list ht-social-networks solid-rounded-icon">
-								@foreach($viewData['main_config']['footer-area-wrapper']['footer-copyright-area']['ht-social-networks'] as $valHSN)
-									<li class="item">
-										{!! $valHSN !!}
-									</li>
-								@endforeach
+                                @foreach($viewData['main_config']['footer-area-wrapper']['footer-copyright-area']['ht-social-networks'] as $valHSN)
+                                <li class="item">
+                                    {!! $valHSN !!}
+                                </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -459,18 +461,18 @@
                             <li class="has-children">
                                 <a href="{{ $valNav['href'] }}">{{ $valNav['lbl_menu'] }}</a>
                                 @if (!empty($valNav['sub_menu']))
-                                    <ul class="sub-menu">
-                                        @foreach ($valNav['sub_menu'] as $valSubMenu1)
-                                            <li class="has-children">
-                                                <a href="{{ $valSubMenu1['href'] }}"><span>{{ $valSubMenu1['lbl_sub_menu'] }}</span></a>
-                                                @if (!empty($valSubMenu1['sub_menu']))
-                                                    <ul class="sub-menu">
-                                                        <li><a href="{{ $valSubMenu2['href'] }}"><span>{{ $valSubMenu2['lbl_sub_menu'] }}</span></a></li>
-                                                    </ul>
-                                                @endif
-                                            </li>
-                                        @endforeach
-                                    </ul>
+                                <ul class="sub-menu">
+                                    @foreach ($valNav['sub_menu'] as $valSubMenu1)
+                                    <li class="has-children">
+                                        <a href="{{ $valSubMenu1['href'] }}"><span>{{ $valSubMenu1['lbl_sub_menu'] }}</span></a>
+                                        @if (!empty($valSubMenu1['sub_menu']))
+                                        <ul class="sub-menu">
+                                            <li><a href="{{ $valSubMenu2['href'] }}"><span>{{ $valSubMenu2['lbl_sub_menu'] }}</span></a></li>
+                                        </ul>
+                                        @endif
+                                    </li>
+                                    @endforeach
+                                </ul>
                                 @endif
                             </li>
                             @endforeach
