@@ -33,8 +33,8 @@ array(
     #logo empresa, navegación, otros links, buscar.
     'header-bottom-wrap'   => array(
         'header__logo'     => array(
-            'light-logo'       => '',//assets/images/logo/light-logo.png
-            'dark-logo'        => ''//assets/images/logo/logo-dark.png
+            'light-logo'       => 'assets/images/logo/light-logo_.png',//assets/images/logo/light-logo.png
+            'dark-logo'        => 'assets/images/logo/logo-dark_.png'//assets/images/logo/logo-dark.png
         ),
         'header__navigation'=> array(
             array(
@@ -135,9 +135,11 @@ array(
                     'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-01-hover-100x98.png'
                 ),
                 'content'      => array(
-                    'heading' => 'Plan Mi negocio en la web',
-                    'text'    => 'Te ayudamos a incorporarte a la web de una forma rápida y efectiva, y a un precio justo. Incluye: Página web personalizada, Hosting anual y Marketing digital.',
-                    'href'    => 'javascript:void(0)'
+                    //'heading' => 'Plan Mi negocio en la web',
+					'heading' => 'Micro Empresas',
+					//'text'    => 'Te ayudamos a incorporarte a la web de una forma rápida y efectiva, y a un precio justo. Incluye: Página web personalizada, Hosting anual y Marketing digital.',
+                    'text'	  => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+					'href'    => 'javascript:void(0)'
                 )
             ),
             array(
@@ -146,9 +148,10 @@ array(
                     'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-02-hover-100x98.png'
                 ),
                 'content'     => array(
-                    'heading' => 'Plan Posicionamiento',
-                    'text'    => 'Si ya posees un sitio web, pero no ha logrado posicionarse en los puestos deseados, te ofrecemos este plan, para que logres los resultados que buscas.',
-                    'href'    => 'javascript:void(0)'
+                    'heading' => 'Pymes',
+                    //'text'    => 'Si ya posees un sitio web, pero no ha logrado posicionarse en los puestos deseados, te ofrecemos este plan, para que logres los resultados que buscas.',
+                    'text'	  => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+					'href'    => 'javascript:void(0)'
                 )
             ),
             array(
@@ -157,9 +160,11 @@ array(
                     'hover-images'  => 'assets/images/icons/mitech-home-resolutions-box-image-03-hover-100x98.png'
                 ),
                 'content'     => array(
-                    'heading' => 'Plan Personalizado',
-                    'text'    => 'Tú eliges lo que necesites para tu empresa, y nosotros te ofrecemos un plan a la medida. Te invitamos a ver nuestros servicios en la siguiente sección.',
-                    'href'    => 'javascript:void(0)'
+                    //'heading' => 'Plan Personalizado',
+					'heading' => 'Grandes Compañias',
+                    //'text'    => 'Tú eliges lo que necesites para tu empresa, y nosotros te ofrecemos un plan a la medida. Te invitamos a ver nuestros servicios en la siguiente sección.',
+                    'text'	  => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+					'href'    => 'javascript:void(0)'
                 )
             )
         ),

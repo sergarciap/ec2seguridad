@@ -110,10 +110,10 @@
                     <div class="col-lg-12">
                         <div class="header position-relative">
                             <!-- brand logo -->
-                            <div class="header__logo">
-                                <a href="index.html">
+                            <div class="header__logo" style="font-size: 18px;font-weight: 500;">
+                                <a href="javascript:void(0)">
                                     <img src="{{ $viewData['main_config']['header-bottom-wrap']['header__logo']['light-logo'] }}" class="img-fluid light-logo" alt="">
-                                    <img src="{{ $viewData['main_config']['header-bottom-wrap']['header__logo']['light-logo'] }}" class="img-fluid dark-logo" alt="">
+                                    <img src="{{ $viewData['main_config']['header-bottom-wrap']['header__logo']['dark-logo'] }}" class="img-fluid dark-logo" alt="">
                                 </a>
                             </div>
 
@@ -302,67 +302,58 @@
         <!--===========  feature-icon-wrapper  End =============-->
 
         <!--===========  Flujo proceso Start =============-->
-        @foreach($viewData['main_config']['flujo'] as $vargf => $varf)
-        <div class="gradation-process-area section-space--ptb_100">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="gradation-title-wrapper section-space--mb_60">
-                            <div class="gradation-title-wrap ">
-                                <h6 class="section-sub-title text-black mb-20">{{ $varf['gradation-process-area']['gradation-title-wrap']['section-sub-title'] }}</h6>
-                                <h4 class="heading">{!! $varf['gradation-process-area']['gradation-title-wrap']['heading'] !!}</h4>
-                            </div>
-
-
-                            <div class="gradation-sub-heading">
-                                <h3 class="heading">{!! $varf['gradation-process-area']['gradation-sub-heading']['heading'] !!}</h3>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="ht-gradation style-01">
-                            <!-- Single item gradation Start -->
-                            @foreach($varf['ht-gradation'] as $varg => $var)
-                            <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
-                                <div class="line"></div>
-                                <div class="circle-wrap">
-                                    <div class="mask">
-                                        <div class="wave-pulse wave-pulse-1"></div>
-                                        <div class="wave-pulse wave-pulse-2"></div>
-                                        <div class="wave-pulse wave-pulse-3"></div>
-                                    </div>
-
-                                    <h6 class="circle">{{ $var['circle'] }}</h6>
-                                </div>
-
-                                <div class="content-wrap">
-
-                                    <h6 class="heading">{{ $var['heading'] }}</h6>
-
-                                    <div class="text">{{ $var['text'] }}</div>
-
-                                    <a class="gradation-btn" href="#">
-                                        {!! $var['button-text'] !!}
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Single item gradation End -->
-                            @endforeach
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        @endforeach
+		@php
+			$boProceso = false;
+		@endphp
+		@if($boProceso)       
+			@foreach($viewData['main_config']['flujo'] as $vargf => $varf)
+			<div class="gradation-process-area section-space--ptb_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="gradation-title-wrapper section-space--mb_60">
+								<div class="gradation-title-wrap ">
+									<h6 class="section-sub-title text-black mb-20">{{ $varf['gradation-process-area']['gradation-title-wrap']['section-sub-title'] }}</h6>
+									<h4 class="heading">{!! $varf['gradation-process-area']['gradation-title-wrap']['heading'] !!}</h4>
+								</div>
+								<div class="gradation-sub-heading">
+									<h3 class="heading">{!! $varf['gradation-process-area']['gradation-sub-heading']['heading'] !!}</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="ht-gradation style-01">
+								<!-- Single item gradation Start -->
+								@foreach($varf['ht-gradation'] as $varg => $var)
+								<div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+									<div class="line"></div>
+									<div class="circle-wrap">
+										<div class="mask">
+											<div class="wave-pulse wave-pulse-1"></div>
+											<div class="wave-pulse wave-pulse-2"></div>
+											<div class="wave-pulse wave-pulse-3"></div>
+										</div>
+										<h6 class="circle">{{ $var['circle'] }}</h6>
+									</div>
+									<div class="content-wrap">
+										<h6 class="heading">{{ $var['heading'] }}</h6>
+										<div class="text">{{ $var['text'] }}</div>
+										<a class="gradation-btn" href="#">
+											{!! $var['button-text'] !!}
+										</a>
+									</div>
+								</div>
+								<!-- Single item gradation End -->
+								@endforeach
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			@endforeach
+		@endif
         <!--===========  Flujo proceso End =============-->
 
 
@@ -371,7 +362,8 @@
 
 
         <!--====================  footer area ====================-->
-        <div class="footer-area-wrapper reveal-footer bg-gray">
+		<!-- bg-gray -->
+        <div class="footer-area-wrapper reveal-footer ">
             <div class="footer-area section-space--ptb_80">
                 <div class="container">
                     <div class="row footer-widget-wrapper">
@@ -382,7 +374,10 @@
                             @endif
                             @if(isset($valFA['footer-widget__logo']))
                             <div class="footer-widget__logo mb-30">
-                                <img src="{{ $valFA['footer-widget__logo'] }}" class="img-fluid" alt="">
+                                <!--<img src="{{ $valFA['footer-widget__logo'] }}" class="img-fluid" alt="">-->
+								<div style="font-size: 18px;font-weight: 500;">
+									<span style="color:#086ad8;">&#60;/creati</span><span style="color:#000000;">verse&#62;</span>
+								</div>
                             </div>
                             @endif
                             @if(isset($valFA['footer-widget__title']))
