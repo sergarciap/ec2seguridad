@@ -24,5 +24,6 @@ Route::get('/', function () {
  * la función "index" del controllador "AdministrarWebController"
  */
 Route::any('/', 'AdministrarWebController@index');
-
-
+Route::any('/accounts/login', 'AdministrarWebController@login');
+Route::any('/accounts/logout', 'AdministrarWebController@logout');
+Route::any('/my-admin', 'AdministrarWebController@myAdmin');
